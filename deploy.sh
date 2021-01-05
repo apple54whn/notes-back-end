@@ -13,9 +13,7 @@ cd docs/.vuepress/dist
 echo 'back-end.conanan.top' > CNAME
 if [ -z "$NOTES_BACK_END_ACCESS_TOKEN" ]; then
   msg='deploy'
-  githubUrl=https://github.com/apple54whn/notes-back-end.git
-  git config --global user.name "conanan"
-  git config --global user.email "wu_haonan@qq.com"
+  githubUrl=https://github.com/apple54whn/notes-front-end.git
 else
   msg='来自github actions的自动部署'
   githubUrl=https://apple54whn:${NOTES_BACK_END_ACCESS_TOKEN}@github.com/apple54whn/notes-back-end.git

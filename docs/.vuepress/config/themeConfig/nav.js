@@ -84,42 +84,32 @@ module.exports = [
       { text: '归档', link: '/archives/' },
     ],
   },
-  {
-    text: 'DataBase',
-    link: '/database/', //目录页链接，此处link是vdoing主题新增的配置项，有二级导航时，可以点击一级导航跳到目录页
-    items: [
-      // 说明：以下所有link的值只是在相应md文件定义的永久链接（不是什么特殊生成的编码）。另外，注意结尾是有斜杠的
-      {
-        // text: '前端文章',
-        items: [
-          { text: 'Core', link: '/pages/4b56bd/' },
-          { text: 'Jakarta EE', link: '/pages/19d479/' },
-          { text: 'Spring', link: '/pages/00e8de/' },
-        ],
-      },
-      {
-        text: '学习笔记',
-        items: [],
-      },
-    ],
-  },
+  // {
+  //   text: 'DataBase',
+  //   link: '/database/', //目录页链接，此处link是vdoing主题新增的配置项，有二级导航时，可以点击一级导航跳到目录页
+  //   items: [
+  //     // 说明：以下所有link的值只是在相应md文件定义的永久链接（不是什么特殊生成的编码）。另外，注意结尾是有斜杠的
+  //     {
+  //       // text: '前端文章',
+  //       items: [
+  //         { text: 'Core', link: '/pages/4b56bd/' },
+  //         { text: 'Jakarta EE', link: '/pages/19d479/' },
+  //         { text: 'Spring', link: '/pages/00e8de/' },
+  //       ],
+  //     },
+  //     {
+  //       text: '学习笔记',
+  //       items: [],
+  //     },
+  //   ],
+  // },
   {
     text: 'Java',
     link: '/java/', //目录页链接，此处link是vdoing主题新增的配置项，有二级导航时，可以点击一级导航跳到目录页
     items: [
-      // 说明：以下所有link的值只是在相应md文件定义的永久链接（不是什么特殊生成的编码）。另外，注意结尾是有斜杠的
-      {
-        // text: '前端文章',
-        items: [
-          { text: 'Core', link: '/pages/4b56bd/' },
-          { text: 'Jakarta EE', link: '/pages/19d479/' },
-          { text: 'Spring', link: '/pages/00e8de/' },
-        ],
-      },
-      {
-        text: '学习笔记',
-        items: [],
-      },
+      { text: 'Core', link: '/pages/4b56bd/' },
+      { text: 'Jakarta EE', link: '/pages/19d479/' },
+      { text: 'Spring', link: '/pages/00e8de/' },
     ],
   },
 ]
