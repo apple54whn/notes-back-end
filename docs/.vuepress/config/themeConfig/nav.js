@@ -105,11 +105,16 @@ module.exports = [
   // },
   {
     text: 'Java',
-    link: '/java/', //目录页链接，此处link是vdoing主题新增的配置项，有二级导航时，可以点击一级导航跳到目录页
+    link: '/pages/4b56bd/', //目录页链接，此处link是vdoing主题新增的配置项，有二级导航时，可以点击一级导航跳到目录页
     items: [
       { text: 'Core', link: '/pages/4b56bd/' },
       { text: 'Jakarta EE', link: '/pages/19d479/' },
       { text: 'Spring', link: '/pages/00e8de/' },
     ],
+  },
+  {
+    text: 'DataBase',
+    link: '/pages/74cdda/', //目录页链接，此处link是vdoing主题新增的配置项，有二级导航时，可以点击一级导航跳到目录页
+    items: [{ text: 'MySQL', link: '/pages/74cdda/' }],
   },
 ]
