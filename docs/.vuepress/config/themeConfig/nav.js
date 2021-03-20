@@ -131,7 +131,8 @@ module.exports = [
     link: '/pages/89d1e7/', //目录页链接，此处link是vdoing主题新增的配置项，有二级导航时，可以点击一级导航跳到目录页
     items: [
       { text: 'Git', link: '/pages/89d1e7/' },
-      { text: 'Vim', link: '/pages/2029ba/' }
+      { text: 'Vim', link: '/pages/2029ba/' },
+      { text: 'Nginx', link: '/pages/2029ba/' }
     ],
   },
 ]
