@@ -110,6 +110,12 @@ module.exports = [
       { text: 'Core', link: '/pages/4b56bd/' },
       { text: 'Jakarta EE', link: '/pages/19d479/' },
       { text: 'Spring', link: '/pages/00e8de/' },
+      {
+        text: '工具',
+        items: [
+          { text: 'Maven', link: '/pages/b18d09/' }
+        ],
+      },
     ],
   },
   {
