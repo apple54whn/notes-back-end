@@ -132,7 +132,8 @@ module.exports = [
     items: [
       { text: 'Git', link: '/pages/89d1e7/' },
       { text: 'Vim', link: '/pages/2029ba/' },
-      { text: 'Nginx', link: '/pages/2029ba/' }
+      { text: 'Nginx', link: '/pages/2029ba/' },
+      { text: 'Docker', link: '/pages/f2d5fb/' }
     ],
   },
 ]
