@@ -107,14 +107,11 @@ module.exports = [
     text: 'Java',
     link: '/pages/4b56bd/', //目录页链接，此处link是vdoing主题新增的配置项，有二级导航时，可以点击一级导航跳到目录页
     items: [
-      { text: 'Core', link: '/pages/4b56bd/' },
-      { text: 'Jakarta EE', link: '/pages/19d479/' },
-      { text: 'Spring', link: '/pages/00e8de/' },
+      { text: 'Java', link: '/pages/4b56bd/' },
+      { text: 'Java Web', link: '/pages/724936/' },
       {
         text: '工具',
-        items: [
-          { text: 'Maven', link: '/pages/b18d09/' }
-        ],
+        items: [{ text: 'Maven', link: '/pages/b18d09/' }],
       },
     ],
   },
@@ -123,7 +120,7 @@ module.exports = [
     link: '/pages/74cdda/', //目录页链接，此处link是vdoing主题新增的配置项，有二级导航时，可以点击一级导航跳到目录页
     items: [
       { text: 'MySQL', link: '/pages/74cdda/' },
-      { text: 'Redis', link: '/pages/d746af/' },
+      { text: 'Redis', link: '/pages/4e9f47/' },
     ],
   },
   {
@@ -133,7 +130,7 @@ module.exports = [
       { text: 'Git', link: '/pages/89d1e7/' },
       { text: 'Vim', link: '/pages/2029ba/' },
       { text: 'Nginx', link: '/pages/2029ba/' },
-      { text: 'Docker', link: '/pages/f2d5fb/' }
+      { text: 'Docker', link: '/pages/f2d5fb/' },
     ],
   },
 ]
