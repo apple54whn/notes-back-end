@@ -1,0 +1,707 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>DDL—表&amp;列 🔥 | conanan&#39;s blog</title>
+    <meta name="generator" content="VuePress 1.5.2">
+    <link rel="icon" href="/img/favicon.ico">
+    <script data-ad-client="ca-pub-7828333725993554" async="async" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <meta name="description" content="web前端技术博客,简洁至上,专注web前端学习与总结。JavaScript,js,ES6,TypeScript,vue,python,css3,html5,Node,git,github等技术文章。">
+    <meta name="keywords" content="前端博客,个人技术博客,前端,前端开发,前端框架,web前端,前端面试题,技术文档,学习,面试,JavaScript,js,ES6,TypeScript,vue,python,css3,html5,Node,git,github,markdown">
+    <meta name="baidu-site-verification" content="7F55weZDDc">
+    <meta name="theme-color" content="#11a8cd">
+    <link rel="preload" href="/assets/css/0.styles.03260d1f.css" as="style"><link rel="preload" href="/assets/js/app.ac5e3ef4.js" as="script"><link rel="preload" href="/assets/js/2.d960b235.js" as="script"><link rel="preload" href="/assets/js/105.603033e4.js" as="script"><link rel="prefetch" href="/assets/js/10.949143aa.js"><link rel="prefetch" href="/assets/js/100.122fb3a2.js"><link rel="prefetch" href="/assets/js/101.88060c8d.js"><link rel="prefetch" href="/assets/js/102.06832b28.js"><link rel="prefetch" href="/assets/js/103.a0c17aef.js"><link rel="prefetch" href="/assets/js/104.b38ef641.js"><link rel="prefetch" href="/assets/js/106.6b288074.js"><link rel="prefetch" href="/assets/js/107.1ffec4c0.js"><link rel="prefetch" href="/assets/js/108.c7b79afa.js"><link rel="prefetch" href="/assets/js/109.dda9fbee.js"><link rel="prefetch" href="/assets/js/11.326a1f58.js"><link rel="prefetch" href="/assets/js/110.920cbe6e.js"><link rel="prefetch" href="/assets/js/111.45bfe7f2.js"><link rel="prefetch" href="/assets/js/112.1f11c570.js"><link rel="prefetch" href="/assets/js/113.fab1cc04.js"><link rel="prefetch" href="/assets/js/114.21ea4ed6.js"><link rel="prefetch" href="/assets/js/115.96f65264.js"><link rel="prefetch" href="/assets/js/116.b324c49b.js"><link rel="prefetch" href="/assets/js/117.dc4d308c.js"><link rel="prefetch" href="/assets/js/118.8f152d6d.js"><link rel="prefetch" href="/assets/js/119.ede5fffc.js"><link rel="prefetch" href="/assets/js/12.23122444.js"><link rel="prefetch" href="/assets/js/120.044161d7.js"><link rel="prefetch" href="/assets/js/121.453c745a.js"><link rel="prefetch" href="/assets/js/122.e3b088eb.js"><link rel="prefetch" href="/assets/js/123.d5a90d16.js"><link rel="prefetch" href="/assets/js/124.7731d89c.js"><link rel="prefetch" href="/assets/js/125.e64126c4.js"><link rel="prefetch" href="/assets/js/126.e46361b1.js"><link rel="prefetch" href="/assets/js/127.067ae046.js"><link rel="prefetch" href="/assets/js/128.59df2a2f.js"><link rel="prefetch" href="/assets/js/129.a2b82230.js"><link rel="prefetch" href="/assets/js/13.6780e0cd.js"><link rel="prefetch" href="/assets/js/130.c20833b9.js"><link rel="prefetch" href="/assets/js/131.da020742.js"><link rel="prefetch" href="/assets/js/132.e20ac455.js"><link rel="prefetch" href="/assets/js/133.f114b097.js"><link rel="prefetch" href="/assets/js/134.49de9e80.js"><link rel="prefetch" href="/assets/js/135.1a24633f.js"><link rel="prefetch" href="/assets/js/136.d5853212.js"><link rel="prefetch" href="/assets/js/137.3a1020dd.js"><link rel="prefetch" href="/assets/js/138.f194f86d.js"><link rel="prefetch" href="/assets/js/139.bf8c1ca0.js"><link rel="prefetch" href="/assets/js/14.08edf279.js"><link rel="prefetch" href="/assets/js/140.c800f5e0.js"><link rel="prefetch" href="/assets/js/141.47afa8e4.js"><link rel="prefetch" href="/assets/js/142.fda2db61.js"><link rel="prefetch" href="/assets/js/143.0224a2e5.js"><link rel="prefetch" href="/assets/js/144.4126fe8d.js"><link rel="prefetch" href="/assets/js/145.9fe0839a.js"><link rel="prefetch" href="/assets/js/146.89a9e1b2.js"><link rel="prefetch" href="/assets/js/147.56419b8e.js"><link rel="prefetch" href="/assets/js/148.03d2b50f.js"><link rel="prefetch" href="/assets/js/149.c1331b6d.js"><link rel="prefetch" href="/assets/js/15.f198e5b9.js"><link rel="prefetch" href="/assets/js/16.00e51c93.js"><link rel="prefetch" href="/assets/js/17.291d3ebc.js"><link rel="prefetch" href="/assets/js/18.017a098e.js"><link rel="prefetch" href="/assets/js/19.61ae84a4.js"><link rel="prefetch" href="/assets/js/20.2fed9841.js"><link rel="prefetch" href="/assets/js/21.0540e3f5.js"><link rel="prefetch" href="/assets/js/22.65f1eb05.js"><link rel="prefetch" href="/assets/js/23.fd9e2f2e.js"><link rel="prefetch" href="/assets/js/24.199ad75b.js"><link rel="prefetch" href="/assets/js/25.005a23bb.js"><link rel="prefetch" href="/assets/js/26.46587fdd.js"><link rel="prefetch" href="/assets/js/27.eaf61373.js"><link rel="prefetch" href="/assets/js/28.12bcc1aa.js"><link rel="prefetch" href="/assets/js/29.2ee78c15.js"><link rel="prefetch" href="/assets/js/3.aae4de15.js"><link rel="prefetch" href="/assets/js/30.5a13fad2.js"><link rel="prefetch" href="/assets/js/31.d559ae93.js"><link rel="prefetch" href="/assets/js/32.d5a38545.js"><link rel="prefetch" href="/assets/js/33.484dfc49.js"><link rel="prefetch" href="/assets/js/34.1a006a06.js"><link rel="prefetch" href="/assets/js/35.12b84d1e.js"><link rel="prefetch" href="/assets/js/36.b2cd4408.js"><link rel="prefetch" href="/assets/js/37.a5859cb8.js"><link rel="prefetch" href="/assets/js/38.96209f1d.js"><link rel="prefetch" href="/assets/js/39.71d70a82.js"><link rel="prefetch" href="/assets/js/4.0e4cf147.js"><link rel="prefetch" href="/assets/js/40.a59b859c.js"><link rel="prefetch" href="/assets/js/41.ebb72a6a.js"><link rel="prefetch" href="/assets/js/42.71f99aa2.js"><link rel="prefetch" href="/assets/js/43.092ff2c9.js"><link rel="prefetch" href="/assets/js/44.d70e216f.js"><link rel="prefetch" href="/assets/js/45.afb733d1.js"><link rel="prefetch" href="/assets/js/46.86c421f9.js"><link rel="prefetch" href="/assets/js/47.6d337ef6.js"><link rel="prefetch" href="/assets/js/48.157e1f1c.js"><link rel="prefetch" href="/assets/js/49.1aed4add.js"><link rel="prefetch" href="/assets/js/5.831f36ca.js"><link rel="prefetch" href="/assets/js/50.b495cbac.js"><link rel="prefetch" href="/assets/js/51.f4a8b763.js"><link rel="prefetch" href="/assets/js/52.beec293d.js"><link rel="prefetch" href="/assets/js/53.2ac4d785.js"><link rel="prefetch" href="/assets/js/54.342112cf.js"><link rel="prefetch" href="/assets/js/55.61e2bfb6.js"><link rel="prefetch" href="/assets/js/56.fa782548.js"><link rel="prefetch" href="/assets/js/57.41bc249e.js"><link rel="prefetch" href="/assets/js/58.c1d5fafb.js"><link rel="prefetch" href="/assets/js/59.4297a34f.js"><link rel="prefetch" href="/assets/js/6.54e4e793.js"><link rel="prefetch" href="/assets/js/60.634948c3.js"><link rel="prefetch" href="/assets/js/61.de4327e7.js"><link rel="prefetch" href="/assets/js/62.c6902476.js"><link rel="prefetch" href="/assets/js/63.737a0e11.js"><link rel="prefetch" href="/assets/js/64.cbe1b041.js"><link rel="prefetch" href="/assets/js/65.2df8f108.js"><link rel="prefetch" href="/assets/js/66.ee7de747.js"><link rel="prefetch" href="/assets/js/67.88edee59.js"><link rel="prefetch" href="/assets/js/68.c29f5efe.js"><link rel="prefetch" href="/assets/js/69.2fedc1f9.js"><link rel="prefetch" href="/assets/js/7.1c00f39e.js"><link rel="prefetch" href="/assets/js/70.0fe4782b.js"><link rel="prefetch" href="/assets/js/71.6c22c273.js"><link rel="prefetch" href="/assets/js/72.1fc7ddbd.js"><link rel="prefetch" href="/assets/js/73.25cb42eb.js"><link rel="prefetch" href="/assets/js/74.e922e1cc.js"><link rel="prefetch" href="/assets/js/75.f48393b6.js"><link rel="prefetch" href="/assets/js/76.72e96818.js"><link rel="prefetch" href="/assets/js/77.3df4edcb.js"><link rel="prefetch" href="/assets/js/78.73c6a652.js"><link rel="prefetch" href="/assets/js/79.22ba589c.js"><link rel="prefetch" href="/assets/js/8.b5f907d4.js"><link rel="prefetch" href="/assets/js/80.2d070db4.js"><link rel="prefetch" href="/assets/js/81.c0bc2539.js"><link rel="prefetch" href="/assets/js/82.4c6a47fa.js"><link rel="prefetch" href="/assets/js/83.a43f597f.js"><link rel="prefetch" href="/assets/js/84.8ce525d0.js"><link rel="prefetch" href="/assets/js/85.6b21aae0.js"><link rel="prefetch" href="/assets/js/86.f6ebabd9.js"><link rel="prefetch" href="/assets/js/87.9acaeb0d.js"><link rel="prefetch" href="/assets/js/88.99cdf592.js"><link rel="prefetch" href="/assets/js/89.58f63450.js"><link rel="prefetch" href="/assets/js/9.053d267f.js"><link rel="prefetch" href="/assets/js/90.1d59f40c.js"><link rel="prefetch" href="/assets/js/91.e8b2a5cd.js"><link rel="prefetch" href="/assets/js/92.b92bba74.js"><link rel="prefetch" href="/assets/js/93.688cad95.js"><link rel="prefetch" href="/assets/js/94.2c11a588.js"><link rel="prefetch" href="/assets/js/95.aa37d1df.js"><link rel="prefetch" href="/assets/js/96.fffa0e6e.js"><link rel="prefetch" href="/assets/js/97.04e9be9f.js"><link rel="prefetch" href="/assets/js/98.2672abca.js"><link rel="prefetch" href="/assets/js/99.c8de1c63.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.03260d1f.css">
+  </head>
+  <body class="theme-mode-light">
+    <div id="app" data-server-rendered="true"><div class="theme-container sidebar-open have-rightmenu"><header class="navbar blur"><div title="目录" class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><img src="/img/EB-logo.png" alt="conanan's blog" class="logo"> <span class="site-name can-hide">conanan's blog</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">首页</a></div><div class="nav-item"><a href="/about/" class="nav-link">关于</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="索引" class="dropdown-title"><a href="/archives/" class="link-title">索引</a> <span class="title" style="display:none;">索引</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/categories/" class="nav-link">分类</a></li><li class="dropdown-item"><!----> <a href="/tags/" class="nav-link">标签</a></li><li class="dropdown-item"><!----> <a href="/archives/" class="nav-link">归档</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Java" class="dropdown-title"><a href="/pages/4b56bd/" class="link-title">Java</a> <span class="title" style="display:none;">Java</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/pages/4b56bd/" class="nav-link">Java</a></li><li class="dropdown-item"><!----> <a href="/pages/724936/" class="nav-link">Java Web</a></li><li class="dropdown-item"><h4>工具</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/pages/b18d09/" class="nav-link">Maven</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="DataBase" class="dropdown-title"><a href="/pages/74cdda/" class="link-title">DataBase</a> <span class="title" style="display:none;">DataBase</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/pages/74cdda/" class="nav-link">MySQL</a></li><li class="dropdown-item"><!----> <a href="/pages/4e9f47/" class="nav-link">Redis</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Tool" class="dropdown-title"><a href="/pages/89d1e7/" class="link-title">Tool</a> <span class="title" style="display:none;">Tool</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/pages/89d1e7/" class="nav-link">Git</a></li><li class="dropdown-item"><!----> <a href="/pages/2029ba/" class="nav-link">Vim</a></li><li class="dropdown-item"><!----> <a href="/pages/2029ba/" class="nav-link">Nginx</a></li><li class="dropdown-item"><!----> <a href="/pages/f2d5fb/" class="nav-link">Docker</a></li></ul></div></div> <a href="https://github.com/xugaoyi/vuepress-theme-vdoing" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar" style="display:none;"><div class="blogger"><img src="https://cdn.jsdelivr.net/gh/xugaoyi/image_store/blog/20200103123203.jpg"> <div class="blogger-info"><h3>Evan Xu</h3> <span>前端界的小学生</span></div></div> <nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">首页</a></div><div class="nav-item"><a href="/about/" class="nav-link">关于</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="索引" class="dropdown-title"><a href="/archives/" class="link-title">索引</a> <span class="title" style="display:none;">索引</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/categories/" class="nav-link">分类</a></li><li class="dropdown-item"><!----> <a href="/tags/" class="nav-link">标签</a></li><li class="dropdown-item"><!----> <a href="/archives/" class="nav-link">归档</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Java" class="dropdown-title"><a href="/pages/4b56bd/" class="link-title">Java</a> <span class="title" style="display:none;">Java</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/pages/4b56bd/" class="nav-link">Java</a></li><li class="dropdown-item"><!----> <a href="/pages/724936/" class="nav-link">Java Web</a></li><li class="dropdown-item"><h4>工具</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/pages/b18d09/" class="nav-link">Maven</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="DataBase" class="dropdown-title"><a href="/pages/74cdda/" class="link-title">DataBase</a> <span class="title" style="display:none;">DataBase</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/pages/74cdda/" class="nav-link">MySQL</a></li><li class="dropdown-item"><!----> <a href="/pages/4e9f47/" class="nav-link">Redis</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Tool" class="dropdown-title"><a href="/pages/89d1e7/" class="link-title">Tool</a> <span class="title" style="display:none;">Tool</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/pages/89d1e7/" class="nav-link">Git</a></li><li class="dropdown-item"><!----> <a href="/pages/2029ba/" class="nav-link">Vim</a></li><li class="dropdown-item"><!----> <a href="/pages/2029ba/" class="nav-link">Nginx</a></li><li class="dropdown-item"><!----> <a href="/pages/f2d5fb/" class="nav-link">Docker</a></li></ul></div></div> <a href="https://github.com/xugaoyi/vuepress-theme-vdoing" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></nav>  <ul class="sidebar-links"><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading open"><span>基础</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/pages/74cdda/" class="sidebar-link">数据库简介</a></li><li><a href="/pages/329719/" class="sidebar-link">SQL 介绍</a></li><li><a href="/pages/0b800b/" class="sidebar-link">列数据类型 🔥</a></li><li><a href="/pages/9cf90b/" class="sidebar-link">DDL—数据库</a></li><li><a href="/pages/0d4fd0/" aria-current="page" class="active sidebar-link">DDL—表&amp;列 🔥</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/pages/0d4fd0/#表-展示当前数据库中的表-🔥" class="sidebar-link">表—展示当前数据库中的表 🔥</a></li><li class="sidebar-sub-header"><a href="/pages/0d4fd0/#表-创建表-🔥" class="sidebar-link">表—创建表 🔥</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/pages/0d4fd0/#语法" class="sidebar-link">语法</a></li><li class="sidebar-sub-header"><a href="/pages/0d4fd0/#示例" class="sidebar-link">示例</a></li></ul></li><li class="sidebar-sub-header"><a href="/pages/0d4fd0/#表-删除表-🔥" class="sidebar-link">表—删除表 🔥</a></li><li class="sidebar-sub-header"><a href="/pages/0d4fd0/#表-查看表结构-🔥" class="sidebar-link">表—查看表结构 🔥</a></li><li class="sidebar-sub-header"><a href="/pages/0d4fd0/#表-查看表的定义信息-🔥" class="sidebar-link">表—查看表的定义信息 🔥</a></li><li class="sidebar-sub-header"><a href="/pages/0d4fd0/#表-查看表详细状态信息-🔥" class="sidebar-link">表—查看表详细状态信息 🔥</a></li><li class="sidebar-sub-header"><a href="/pages/0d4fd0/#表-没有选择当前数据库时对表的操作-🔥" class="sidebar-link">表—没有选择当前数据库时对表的操作 🔥</a></li><li class="sidebar-sub-header"><a href="/pages/0d4fd0/#表-修改表名-🔥" class="sidebar-link">表—修改表名 🔥</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/pages/0d4fd0/#方式一：" class="sidebar-link">方式一：</a></li><li class="sidebar-sub-header"><a href="/pages/0d4fd0/#方式二：" class="sidebar-link">方式二：</a></li></ul></li><li class="sidebar-sub-header"><a href="/pages/0d4fd0/#表-复制表结构-🔥" class="sidebar-link">表—复制表结构 🔥</a></li><li class="sidebar-sub-header"><a href="/pages/0d4fd0/#表-修改表的字符集-🔥" class="sidebar-link">表—修改表的字符集 🔥</a></li><li class="sidebar-sub-header"><a href="/pages/0d4fd0/#" class="sidebar-link">===============</a></li><li class="sidebar-sub-header"><a href="/pages/0d4fd0/#列-增加列-🔥" class="sidebar-link">列—增加列 🔥</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/pages/0d4fd0/#语法-2" class="sidebar-link">语法</a></li><li class="sidebar-sub-header"><a href="/pages/0d4fd0/#增加列到特定位置" class="sidebar-link">增加列到特定位置</a></li></ul></li><li class="sidebar-sub-header"><a href="/pages/0d4fd0/#列-删除列-🔥" class="sidebar-link">列—删除列 🔥</a></li><li class="sidebar-sub-header"><a href="/pages/0d4fd0/#列-修改列信息-🔥" class="sidebar-link">列—修改列信息 🔥</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/pages/0d4fd0/#修改列的信息" class="sidebar-link">修改列的信息</a></li><li class="sidebar-sub-header"><a href="/pages/0d4fd0/#修改列排列位置" class="sidebar-link">修改列排列位置</a></li></ul></li><li class="sidebar-sub-header"><a href="/pages/0d4fd0/#列-一条语句中包含多个修改操作-🔥" class="sidebar-link">列—一条语句中包含多个修改操作 🔥</a></li><li class="sidebar-sub-header"><a href="/pages/0d4fd0/#-2" class="sidebar-link">===============</a></li><li class="sidebar-sub-header"><a href="/pages/0d4fd0/#列的属性（约束）" class="sidebar-link">列的属性（约束）</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/pages/0d4fd0/#主键-🔥" class="sidebar-link">主键 🔥</a></li><li class="sidebar-sub-header"><a href="/pages/0d4fd0/#unique-属性-🔥" class="sidebar-link">UNIQUE 属性 🔥</a></li><li class="sidebar-sub-header"><a href="/pages/0d4fd0/#主键和-unique-约束的区别" class="sidebar-link">主键和 UNIQUE 约束的区别</a></li><li class="sidebar-sub-header"><a href="/pages/0d4fd0/#not-null-属性-🔥" class="sidebar-link">NOT NULL 属性 🔥</a></li><li class="sidebar-sub-header"><a href="/pages/0d4fd0/#默认值-🔥" class="sidebar-link">默认值 🔥</a></li><li class="sidebar-sub-header"><a href="/pages/0d4fd0/#外键" class="sidebar-link">外键</a></li><li class="sidebar-sub-header"><a href="/pages/0d4fd0/#auto-increment-属性" class="sidebar-link">AUTO_INCREMENT 属性</a></li><li class="sidebar-sub-header"><a href="/pages/0d4fd0/#列的注释" class="sidebar-link">列的注释</a></li><li class="sidebar-sub-header"><a href="/pages/0d4fd0/#影响展示外观的-zerofill-属性" class="sidebar-link">影响展示外观的 ZEROFILL 属性</a></li><li class="sidebar-sub-header"><a href="/pages/0d4fd0/#一个列同时具有多个属性" class="sidebar-link">一个列同时具有多个属性</a></li><li class="sidebar-sub-header"><a href="/pages/0d4fd0/#查看表结构时的列属性" class="sidebar-link">查看表结构时的列属性</a></li></ul></li><li class="sidebar-sub-header"><a href="/pages/0d4fd0/#标识符的命名" class="sidebar-link">标识符的命名</a></li></ul></li><li><a href="/pages/47f816/" class="sidebar-link">DML 🔥</a></li><li><a href="/pages/ffb330/" class="sidebar-link">DQL 🔥</a></li><li><a href="/pages/4069e4/" class="sidebar-link">复杂查询 🔥</a></li><li><a href="/pages/a3a5ae/" class="sidebar-link">集合运算 🔥</a></li><li><a href="/pages/63ca63/" class="sidebar-link">存储程序</a></li></ul></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>高级</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>运维</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>练习</span> <span class="arrow right"></span></p> <!----></section></li></ul> <div class="sidebar-slot sidebar-slot-bottom"><!-- 正方形 -->
+      <ins class="adsbygoogle"
+          style="display:block"
+          data-ad-client="ca-pub-7828333725993554"
+          data-ad-slot="3508773082"
+          data-ad-format="auto"
+          data-full-width-responsive="true"></ins>
+      <script>
+          (adsbygoogle = window.adsbygoogle || []).push({});
+      </script></div></aside> <div><main class="page"><div class="theme-vdoing-wrapper "><div class="articleInfo-wrap" data-v-1cd794fe><div class="articleInfo" data-v-1cd794fe><ul class="breadcrumbs" data-v-1cd794fe><li data-v-1cd794fe><a href="/" title="首页" class="iconfont icon-home router-link-active" data-v-1cd794fe></a></li> <li data-v-1cd794fe><a href="/categories/?category=MySQL" title="分类" data-v-1cd794fe>MySQL</a></li> <li data-v-1cd794fe><a href="/categories/?category=%E5%9F%BA%E7%A1%80" title="分类" data-v-1cd794fe>基础</a></li> <!----></ul> <div class="info" data-v-1cd794fe><div title="作者" class="author iconfont icon-touxiang" data-v-1cd794fe><a href="https://github.com/apple54whn" target="_blank" title="作者" class="beLink" data-v-1cd794fe>conanan</a></div> <div title="创建时间" class="date iconfont icon-riqi" data-v-1cd794fe><a href="javascript:;" data-v-1cd794fe>2021-01-16</a></div> <!----></div></div></div> <!----> <div class="content-wrapper"><div class="right-menu-wrapper"><div class="right-menu-margin"><div class="right-menu-content"></div></div></div> <h1><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAABH1JREFUSA3tVl1oHFUUPmdmd2ltklqbpJDiNnXFmgbFktho7YMPNiJSSZM0+CAYSkUELVhM6YuwIPpgoOKDqOBDC0XE2CQoNtQXBUFTTcCi+Wlh1V2TQExsUzcltd3M9Tt3ZjZzZ2fT+OJTL8yeM+eee757fmeJbq//KQL8X3DUSFOcfr7cRsRtxNQMWueeVzOkaITIGqQHNg5y8+jNW9ldM7A6nTpAjuolUikAwq7CE3WcM2RRDz+XGVgN3FptU/aUSlvq9Pa3iZ1+sgAqJyyAFqkipd9dqiwHF3P65YycLWc/6sqGrvoEoIp6DOFaX5h6+dnfjkWprwqsPk0dUGq5vySwDImC10KxFHgGL1SWoc92O3eVht09qdXNH11I2SsTsJYqMWzihqGMi+A+Garf3BAuuLI5oGlULyNfyB/HYNujwktOfRrMr5t77NmevqaUopx0grnKAyvVpmwUDB4x6FPXuGvYLTDwWsejwgtgkYKPqRJg8SV6xaiZ3ZTppGneS4yfH5/66fZSDHv+QZci/+h5c5UHtpy67JUqGppM0sh0Nc1dW6/N1W5Yoqat8/TU/VnadmdeW2PLLSyh0cvxBs3KbqTmwYPpxN4do/mzE8nEpvX/UMu2Wbp74zUAK5q6WkHns7V0eWkdPbPzd3rxkTGybadYySumVzhcaJFbs5UrEkQ/+CK8gF5dnh/6ciIZ73gwQ927L1IitoxKLXYP3SjYdOrHHfTZhRRlFyrorafPk20B3HPD1y2G3qKZME5Jcf3t/HUC13/8tSd++vqFveMUTwAUxSUFI1QekR1+bIze3D9MF2aq6cPvG72CgnldWCFqyRw3lwH8ZMerjTD9ElRO7Gv44wNpC90aASqGfVlz/Rx17srQ57/UU26hkhQqUB7dBR71WmzQhHUnblGmVOEw0jhbV1n9OlXUDCIRGaNV5Jp43N516fN7JmnTHdfp7Hgy0luO4aMhtkLL8Bi3bUWYvzh5Mn1dTxrL6QmGuRhGL/TiTTxRoEdTszSaq9GR0NGA3KdkOz3hqSV3MIDhQ5IVX/Ivx3umBti2es2h4eZby7x8br1rkf7Mo90AqC8aQ3sJeNzqFRu+vSANAQe3PL7l0HGOAdwDCeZYvNKeoZp1Qfs6Aipndh86HmFRi0LAnEO47wsqM6cdfjh3jBPUzhZy7nvlUfFsamED1VQt6aISHVymXZ/B2aCtIG8AI8xfobj2d3en1wWVhOeHELKmLQ1s211s88comkv4UCwWyF787mJdYXtNfhKAXVqnKTq8QZvGAGGOfaTo5pGZ/PwbUCr5+DPr/1J92JNHr9aOl/F3iI5+O1nfybsGxoimvZ3ViWSluDITw3P37mypheDIPY0tw7+O/5ApbkYw+zpfaUVu32Pi98+defdUhEpZkRFq0aqyNh9FuL9hpYbEm6iwi0z2REd09ZmyENEbuhjDWzKvZXTqKYaBIr3tt5kuPtQBZFvEUwHt60vfCNu41XsksH9Ij1BMMz1Y0OOunHNShFIP5868g5zeXmuLwL9T4b6Q2+KejgAAAABJRU5ErkJggg==">
+          DDL—表&amp;列 🔥
+        </h1> <div class="page-slot page-slot-top"><!-- 固定100% * 90px可显示，max-height:90px未见显示-->
+     <ins class="adsbygoogle"
+          style="display:inline-block;width:100%;max-height:90px"
+          data-ad-client="ca-pub-7828333725993554"
+          data-ad-slot="6625304284"></ins>
+      <script>
+          (adsbygoogle = window.adsbygoogle || []).push({});
+      </script></div> <div class="theme-vdoing-content content__default"><h1 id="ddl-表-列"><a href="#ddl-表-列" class="header-anchor">#</a> DDL—表&amp;列</h1> <p><strong>DDL 无需 commit</strong></p> <h2 id="表-展示当前数据库中的表-🔥"><a href="#表-展示当前数据库中的表-🔥" class="header-anchor">#</a> 表—展示当前数据库中的表 🔥</h2> <div class="language- line-numbers-mode"><pre class="language-text"><code>SHOW TABLES;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>当前数据库是<code>demo</code>，然后用上述语句查看下<code>demo</code>数据库中都有哪些表：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>mysql&gt; SHOW TABLES;
+Empty set (0.00 sec)
+
+mysql&gt;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div><h2 id="表-创建表-🔥"><a href="#表-创建表-🔥" class="header-anchor">#</a> 表—创建表 🔥</h2> <h3 id="语法"><a href="#语法" class="header-anchor">#</a> 语法</h3> <div class="language-sql line-numbers-mode"><pre class="language-sql"><code> <span class="token keyword">CREATE</span> <span class="token keyword">TABLE</span> <span class="token punctuation">[</span><span class="token keyword">IF</span> <span class="token operator">NOT</span> <span class="token keyword">EXISTS</span><span class="token punctuation">]</span> 表名 <span class="token punctuation">(</span>
+     列名<span class="token number">1</span>    数据类型    <span class="token punctuation">[</span>列的属性<span class="token punctuation">]</span><span class="token punctuation">,</span>
+     列名<span class="token number">2</span>    数据类型    <span class="token punctuation">[</span>列的属性<span class="token punctuation">]</span><span class="token punctuation">,</span>
+     <span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span>
+     列名n    数据类型    <span class="token punctuation">[</span>列的属性<span class="token punctuation">]</span><span class="token punctuation">,</span>
+     <span class="token keyword">PRIMARY</span> <span class="token keyword">KEY</span> <span class="token punctuation">(</span>列名<span class="token punctuation">)</span>
+ <span class="token punctuation">)</span> <span class="token keyword">COMMENT</span> <span class="token string">'表的注释信息'</span><span class="token punctuation">;</span>
+
+<span class="token comment">-- 约束可以在定义列的时候进行设置，也可以在语句的末尾进行设置。但是NOT NULL约束只能以列为单位进行设置</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br></div></div><ul><li>在<code>CREATE TABLE</code>后写清楚我们要创建的表的名称。</li> <li>然后在小括号<code>()</code>中定义上这个表的各个列的信息，包括列的名称、列的数据类型，如果有需要的话也可以定义这个列的属性（列的属性用中括号<code>[]</code>引起来的意思就是这部分是可选的，也就是可有可无的）。</li> <li>列名、数据类型、列的属性之间用空白字符分开就好，然后各个列的信息之间用逗号<code>,</code>分隔开。</li> <li>如果创建一个已经存在的表的话是会报错的，可以加入<code>IF NOT EXISTS</code>语句</li></ul> <h3 id="示例"><a href="#示例" class="header-anchor">#</a> 示例</h3> <div class="language- line-numbers-mode"><pre class="language-text"><code>mysql&gt; CREATE TABLE first_table (
+    -&gt;     first_column INT,
+    -&gt;     second_column VARCHAR(100)
+    -&gt; ) COMMENT '第一个表';
+Query OK, 0 rows affected (0.02 sec)
+
+mysql&gt;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br></div></div><p>输出<code>Query OK, 0 rows affected (0.02 sec)</code>意味着创建成功了，并且耗时 0.02 秒。</p> <p>有了创建<code>first_table</code>的经验，我们就可以着手用<code>MySQL</code>把之前提到的学生基本信息表和成绩表给创建出来了，先把学生基本信息表搬下来看看：</p> <p><strong>学生基本信息表</strong></p> <table><thead><tr><th>学号</th> <th>姓名</th> <th>性别</th> <th>身份证号</th> <th>学院</th> <th>专业</th> <th>入学时间</th></tr></thead> <tbody><tr><td>20180101</td> <td>杜子腾</td> <td>男</td> <td>158177199901044792</td> <td>计算机学院</td> <td>计算机科学与工程</td> <td>2018/9/1</td></tr> <tr><td>20180102</td> <td>杜琦燕</td> <td>女</td> <td>151008199801178529</td> <td>计算机学院</td> <td>计算机科学与工程</td> <td>2018/9/1</td></tr> <tr><td>20180103</td> <td>范统</td> <td>男</td> <td>17156319980116959X</td> <td>计算机学院</td> <td>软件工程</td> <td>2018/9/1</td></tr> <tr><td>20180104</td> <td>史珍香</td> <td>女</td> <td>141992199701078600</td> <td>计算机学院</td> <td>软件工程</td> <td>2018/9/1</td></tr></tbody></table> <p>很显然，这个表有<code>学号</code>、<code>姓名</code>、<code>性别</code>、<code>身份证号</code>、<code>学院</code>、<code>专业</code>、<code>入学时间</code>这几个列，其中的<code>学号</code>是整数类型的，<code>入学时间</code>是日期类型的，由于身份证号是固定的 18 位，我们可以把<code>身份证号</code>这一列定义成固定长度的字符串类型，<code>性别</code>一列只能填<code>男</code>或<code>女</code>，所以我们这里把它定义为<code>ENUM</code>类型的，其余各个列都是变长的字符串类型。看一下创建学生基本信息表的语句：</p> <div class="language-sql line-numbers-mode"><pre class="language-sql"><code><span class="token keyword">CREATE</span> <span class="token keyword">TABLE</span> student_info <span class="token punctuation">(</span>
+    number <span class="token keyword">INT</span><span class="token punctuation">,</span>
+    name <span class="token keyword">VARCHAR</span><span class="token punctuation">(</span><span class="token number">5</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+    sex <span class="token keyword">ENUM</span><span class="token punctuation">(</span><span class="token string">'男'</span><span class="token punctuation">,</span> <span class="token string">'女'</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+    id_number <span class="token keyword">CHAR</span><span class="token punctuation">(</span><span class="token number">18</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+    department <span class="token keyword">VARCHAR</span><span class="token punctuation">(</span><span class="token number">30</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+    major <span class="token keyword">VARCHAR</span><span class="token punctuation">(</span><span class="token number">30</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+    enrollment_time <span class="token keyword">DATE</span>
+<span class="token punctuation">)</span> <span class="token keyword">COMMENT</span> <span class="token string">'学生基本信息表'</span><span class="token punctuation">;</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br></div></div><p>然后再看一下学生成绩表：</p> <table><thead><tr><th>学号</th> <th>科目</th> <th>成绩</th></tr></thead> <tbody><tr><td>20180101</td> <td>母猪的产后护理</td> <td>78</td></tr> <tr><td>20180101</td> <td>论萨达姆的战争准备</td> <td>88</td></tr> <tr><td>20180102</td> <td>母猪的产后护理</td> <td>100</td></tr> <tr><td>20180102</td> <td>论萨达姆的战争准备</td> <td>98</td></tr> <tr><td>20180103</td> <td>母猪的产后护理</td> <td>59</td></tr> <tr><td>20180103</td> <td>论萨达姆的战争准备</td> <td>61</td></tr> <tr><td>20180104</td> <td>母猪的产后护理</td> <td>55</td></tr> <tr><td>20180104</td> <td>论萨达姆的战争准备</td> <td>46</td></tr></tbody></table> <p>这个表有<code>学号</code>、<code>科目</code>、<code>成绩</code>这几个列，<code>学号</code>和<code>成绩</code>是整数类型的，科目是字符串类型的，所以我们可以这样写建表语句：</p> <div class="language-sql line-numbers-mode"><pre class="language-sql"><code><span class="token keyword">CREATE</span> <span class="token keyword">TABLE</span> student_score <span class="token punctuation">(</span>
+    number <span class="token keyword">INT</span><span class="token punctuation">,</span>
+    subject <span class="token keyword">VARCHAR</span><span class="token punctuation">(</span><span class="token number">30</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+    score <span class="token keyword">TINYINT</span>
+<span class="token punctuation">)</span> <span class="token keyword">COMMENT</span> <span class="token string">'学生成绩表'</span><span class="token punctuation">;</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><p>待这几个表创建成功之后，我们使用<code>SHOW TABLES</code>语句看一下当前数据库中有哪些表：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>mysql&gt; SHOW TABLES;
++---------------------+
+| Tables_in_demo |
++---------------------+
+| first_table         |
+| student_info        |
+| student_score       |
++---------------------+
+3 rows in set (0.01 sec)
+
+mysql&gt;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br></div></div><div class="language-sql line-numbers-mode"><pre class="language-sql"><code><span class="token keyword">DROP</span> <span class="token keyword">TABLE</span> <span class="token keyword">IF</span> <span class="token keyword">EXISTS</span> <span class="token punctuation">`</span>player<span class="token punctuation">`</span><span class="token punctuation">;</span>
+<span class="token keyword">CREATE</span> <span class="token keyword">TABLE</span> <span class="token punctuation">`</span>player<span class="token punctuation">`</span>  <span class="token punctuation">(</span>
+    <span class="token punctuation">`</span>player_id<span class="token punctuation">`</span> <span class="token keyword">int</span><span class="token punctuation">(</span><span class="token number">11</span><span class="token punctuation">)</span> <span class="token operator">NOT</span> <span class="token boolean">NULL</span> <span class="token keyword">AUTO_INCREMENT</span><span class="token punctuation">,</span>
+    <span class="token punctuation">`</span>team_id<span class="token punctuation">`</span> <span class="token keyword">int</span><span class="token punctuation">(</span><span class="token number">11</span><span class="token punctuation">)</span> <span class="token operator">NOT</span> <span class="token boolean">NULL</span><span class="token punctuation">,</span>
+    <span class="token punctuation">`</span>player_name<span class="token punctuation">`</span> <span class="token keyword">varchar</span><span class="token punctuation">(</span><span class="token number">255</span><span class="token punctuation">)</span> <span class="token keyword">CHARACTER</span> <span class="token keyword">SET</span> utf8 <span class="token keyword">COLLATE</span> utf8_general_ci <span class="token operator">NOT</span> <span class="token boolean">NULL</span><span class="token punctuation">,</span>
+    <span class="token punctuation">`</span>height<span class="token punctuation">`</span> <span class="token keyword">float</span><span class="token punctuation">(</span><span class="token number">3</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">)</span> <span class="token boolean">NULL</span> <span class="token keyword">DEFAULT</span> <span class="token number">0.00</span><span class="token punctuation">,</span>
+    <span class="token keyword">PRIMARY</span> <span class="token keyword">KEY</span> <span class="token punctuation">(</span><span class="token punctuation">`</span>player_id<span class="token punctuation">`</span><span class="token punctuation">)</span> <span class="token keyword">USING</span> <span class="token keyword">BTREE</span><span class="token punctuation">,</span>
+    <span class="token keyword">UNIQUE</span> <span class="token keyword">INDEX</span> <span class="token punctuation">`</span>player_name<span class="token punctuation">`</span><span class="token punctuation">(</span><span class="token punctuation">`</span>player_name<span class="token punctuation">`</span><span class="token punctuation">)</span> <span class="token keyword">USING</span> <span class="token keyword">BTREE</span>
+<span class="token punctuation">)</span> <span class="token keyword">ENGINE</span> <span class="token operator">=</span> <span class="token keyword">InnoDB</span> <span class="token keyword">CHARACTER</span> <span class="token keyword">SET</span> <span class="token operator">=</span> utf8 <span class="token keyword">COLLATE</span> <span class="token operator">=</span> utf8_general_ci ROW_FORMAT <span class="token operator">=</span> Dynamic<span class="token punctuation">;</span>
+<span class="token comment">-- 其中 player_name 字段的字符集是 utf8（推荐utf-8mb4），排序规则是 utf8_general_ci，代表对大小写不敏感，如果设置为utf8_bin，代表对大小写敏感，还有许多其他排序规则这里不进行介绍。</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br></div></div><h2 id="表-删除表-🔥"><a href="#表-删除表-🔥" class="header-anchor">#</a> 表—删除表 🔥</h2> <div class="language- line-numbers-mode"><pre class="language-text"><code>DROP TABLE [IF EXISTS] 表1, 表2, ..., 表n;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><div class="language- line-numbers-mode"><pre class="language-text"><code>mysql&gt; DROP TABLE first_table;
+Query OK, 0 rows affected (0.01 sec)
+
+mysql&gt; SHOW TABLES;
++---------------------+
+| Tables_in_demo |
++---------------------+
+| student_info        |
+| student_score       |
++---------------------+
+2 rows in set (0.00 sec)
+
+mysql&gt;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br></div></div><p>如果我们尝试删除某个不存在的表的话会报错，可以加入<code>IF EXISTS</code>语句</p> <h2 id="表-查看表结构-🔥"><a href="#表-查看表结构-🔥" class="header-anchor">#</a> 表—查看表结构 🔥</h2> <div class="language- line-numbers-mode"><pre class="language-text"><code>DESC 表名;
+DESCRIBE 表名;
+EXPLAIN 表名;
+SHOW COLUMNS FROM 表名;
+SHOW FIELDS FROM 表名;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><p>比如我们看一下<code>student_info</code>这个表的结构：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>mysql&gt; DESC student_info;
++-----------------+-------------------+------+-----+---------+-------+
+| Field           | Type              | Null | Key | Default | Extra |
++-----------------+-------------------+------+-----+---------+-------+
+| number          | int(11)           | YES  |     | NULL    |       |
+| name            | varchar(5)        | YES  |     | NULL    |       |
+| sex             | enum('男','女')   | YES  |     | NULL    |       |
+| id_number       | char(18)          | YES  |     | NULL    |       |
+| department      | varchar(30)       | YES  |     | NULL    |       |
+| major           | varchar(30)       | YES  |     | NULL    |       |
+| enrollment_time | date              | YES  |     | NULL    |       |
++-----------------+-------------------+------+-----+---------+-------+
+7 rows in set (0.00 sec)
+
+mysql&gt;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br></div></div><p>可以看到，这个<code>student_info</code>表的各个列的名称、类型和属性就都展示出来了。</p> <h2 id="表-查看表的定义信息-🔥"><a href="#表-查看表的定义信息-🔥" class="header-anchor">#</a> 表—查看表的定义信息 🔥</h2> <div class="language- line-numbers-mode"><pre class="language-text"><code>SHOW CREATE TABLE 表名;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>比如：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>mysql&gt; SHOW CREATE TABLE student_info;
++--------------+------------------------------------------+
+| Table        | Create Table
++--------------+------------------------------------------+
+| student_info | CREATE TABLE `student_info` (
+  `number` int(11) DEFAULT NULL,
+  `name` varchar(5) DEFAULT NULL,
+  `sex` enum('男','女') DEFAULT NULL,
+  `id_number` char(18) DEFAULT NULL,
+  `department` varchar(30) DEFAULT NULL,
+  `major` varchar(30) DEFAULT NULL,
+  `enrollment_time` date DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='学生基本信息表'          |
++--------------+-------------------------------------------+
+1 row in set (0.00 sec)
+
+mysql&gt;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br></div></div><p>由于这行数据太长了，所以输出效果并不是很好，我们可以把原来用于标记语句结束的分号<code>;</code>改为<code>\G</code>，以垂直的方式展示每一列数据的效果可能好点：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>mysql&gt; SHOW CREATE TABLE student_info\G
+*************************** 1. row ***************************
+       Table: student_info
+Create Table: CREATE TABLE `student_info` (
+  `number` int(11) DEFAULT NULL,
+  `name` varchar(5) DEFAULT NULL,
+  `sex` enum('男','女') DEFAULT NULL,
+  `id_number` char(18) DEFAULT NULL,
+  `department` varchar(30) DEFAULT NULL,
+  `major` varchar(30) DEFAULT NULL,
+  `enrollment_time` date DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='学生基本信息表'
+1 row in set (0.00 sec)
+
+mysql&gt;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br></div></div><p>可以看到，使用<code>SHOW CREATE TABLE</code>这个语句展示出来的表结构就是我们平时创建表的语句</p> <h2 id="表-查看表详细状态信息-🔥"><a href="#表-查看表详细状态信息-🔥" class="header-anchor">#</a> 表—查看表详细状态信息 🔥</h2> <div class="language-sql line-numbers-mode"><pre class="language-sql"><code><span class="token keyword">show</span> <span class="token keyword">table</span> <span class="token keyword">status</span><span class="token punctuation">;</span> <span class="token comment">-- 所有表</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><div class="language- line-numbers-mode"><pre class="language-text"><code>+-------------+------+-------+----------+----+--------------+-----------+---------------+------------+---------+--------------+-------------------+-------------------+----------+------------------+--------+--------------+-------+
+|Name         |Engine|Version|Row_format|Rows|Avg_row_length|Data_length|Max_data_length|Index_length|Data_free|Auto_increment|Create_time        |Update_time        |Check_time|Collation         |Checksum|Create_options|Comment|
++-------------+------+-------+----------+----+--------------+-----------+---------------+------------+---------+--------------+-------------------+-------------------+----------+------------------+--------+--------------+-------+
+|a            |InnoDB|10     |Dynamic   |4   |4096          |16384      |0              |0           |0        |NULL          |2021-01-16 15:25:43|2021-01-16 15:26:44|NULL      |utf8mb4_general_ci|NULL    |              |       |
+|article      |InnoDB|10     |Dynamic   |0   |0             |16384      |0              |0           |0        |NULL          |2020-12-20 23:48:02|NULL               |NULL      |utf8mb4_general_ci|NULL    |              |       |
+|b            |InnoDB|10     |Dynamic   |4   |4096          |16384      |0              |0           |0        |NULL          |2021-01-16 15:27:30|2021-01-16 15:30:23|NULL      |utf8mb4_general_ci|NULL    |              |       |
+|customer     |InnoDB|10     |Dynamic   |1   |16384         |16384      |0              |0           |0        |2             |2020-12-20 23:48:02|2020-12-21 00:23:52|NULL      |utf8mb4_general_ci|NULL    |              |       |
+|link_man     |InnoDB|10     |Dynamic   |1   |16384         |16384      |0              |16384       |0        |2             |2020-12-20 23:48:03|2020-12-21 00:23:52|NULL      |utf8mb4_general_ci|NULL    |              |       |
+|score        |InnoDB|10     |Dynamic   |8   |2048          |16384      |0              |0           |0        |9             |2021-01-16 13:08:42|2021-01-16 13:13:11|NULL      |utf8mb4_general_ci|NULL    |              |成绩表    |
+|sys_role     |InnoDB|10     |Dynamic   |1   |16384         |16384      |0              |0           |0        |6             |2020-12-20 23:48:02|2020-12-21 00:12:20|NULL      |utf8mb4_general_ci|NULL    |              |       |
+|sys_user     |InnoDB|10     |Dynamic   |3   |5461          |16384      |0              |0           |0        |8             |2020-12-20 23:48:02|2021-01-16 01:28:21|NULL      |utf8mb4_general_ci|NULL    |              |       |
+|sys_user_role|InnoDB|10     |Dynamic   |1   |16384         |16384      |0              |16384       |0        |NULL          |2020-12-20 23:48:03|2020-12-21 00:13:49|NULL      |utf8mb4_general_ci|NULL    |              |       |
+|tlm          |InnoDB|10     |Dynamic   |3   |5461          |16384      |0              |0           |0        |4             |2020-12-21 10:53:30|2020-12-21 11:02:33|NULL      |utf8mb4_general_ci|NULL    |              |       |
+|user         |InnoDB|10     |Dynamic   |0   |0             |16384      |0              |0           |0        |NULL          |2020-12-20 23:48:03|NULL               |NULL      |utf8mb4_general_ci|NULL    |              |       |
++-------------+------+-------+----------+----+--------------+-----------+---------------+------------+---------+--------------+-------------------+-------------------+----------+------------------+--------+--------------+-------+
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br></div></div><div class="language-sql line-numbers-mode"><pre class="language-sql"><code><span class="token keyword">show</span> <span class="token keyword">table</span> <span class="token keyword">status</span> <span class="token keyword">where</span> Name <span class="token operator">=</span> <span class="token string">'a'</span><span class="token punctuation">;</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><div class="language- line-numbers-mode"><pre class="language-text"><code>+---------------+-------------------+
+|Name           |a                  |
++---------------+-------------------+
+|Engine         |InnoDB             |
++---------------+-------------------+
+|Version        |10                 |
++---------------+-------------------+
+|Row_format     |Dynamic            |
++---------------+-------------------+
+|Rows           |4                  |
++---------------+-------------------+
+|Avg_row_length |4096               |
++---------------+-------------------+
+|Data_length    |16384              |
++---------------+-------------------+
+|Max_data_length|0                  |
++---------------+-------------------+
+|Index_length   |0                  |
++---------------+-------------------+
+|Data_free      |0                  |
++---------------+-------------------+
+|Auto_increment |NULL               |
++---------------+-------------------+
+|Create_time    |2021-01-16 15:25:43|
++---------------+-------------------+
+|Update_time    |2021-01-16 15:26:44|
++---------------+-------------------+
+|Check_time     |NULL               |
++---------------+-------------------+
+|Collation      |utf8mb4_general_ci |
++---------------+-------------------+
+|Checksum       |NULL               |
++---------------+-------------------+
+|Create_options |                   |
++---------------+-------------------+
+|Comment        |                   |
++---------------+-------------------+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br></div></div><h2 id="表-没有选择当前数据库时对表的操作-🔥"><a href="#表-没有选择当前数据库时对表的操作-🔥" class="header-anchor">#</a> 表—没有选择当前数据库时对表的操作 🔥</h2> <p>有时候我们并没有使用<code>USE</code>语句来选择当前数据库，或者在一条语句中遇到的表分散在不同的数据库中，如果我们想在语句中使用这些表，那么就必须显式的指定这些表所属的数据库了。比如不管当前数据库是不是<code>demo</code>，我们都可以调用这个语句来展示数据库<code>demo</code>里边的表：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>mysql&gt; SHOW TABLES FROM demo;
++---------------------+
+| Tables_in_demo |
++---------------------+
+| first_table         |
+| student_info        |
+| student_score       |
++---------------------+
+3 rows in set (0.00 sec)
+
+mysql&gt;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br></div></div><p>其他地方如果使用到表名的话，需要显式指定这个表所属的数据库，指明方式是这样的：</p> <div class="language-sql line-numbers-mode"><pre class="language-sql"><code>数据库名<span class="token punctuation">.</span>表名
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>比方说我们想查看<code>demo</code>数据库下<code>first_table</code>表的结构，但是又没有使用<code>USE demo</code>语句指定当前数据库，此时可以这样写语句：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>SHOW CREATE TABLE demo.first_table\G
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><h2 id="表-修改表名-🔥"><a href="#表-修改表名-🔥" class="header-anchor">#</a> 表—修改表名 🔥</h2> <h3 id="方式一："><a href="#方式一：" class="header-anchor">#</a> 方式一：</h3> <div class="language- line-numbers-mode"><pre class="language-text"><code>ALTER TABLE 旧表名 RENAME TO 新表名;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>我们把<code>first_table</code>表的名称修改为<code>first_table1</code>（当前数据库为<code>demo</code>）：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>mysql&gt; ALTER TABLE first_table RENAME TO first_table1;
+Query OK, 0 rows affected (0.01 sec)
+
+mysql&gt; SHOW TABLES;
++---------------------+
+| Tables_in_xiaohaizi |
++---------------------+
+| first_table1        |
+| student_info        |
+| student_score       |
++---------------------+
+3 rows in set (0.00 sec)
+
+mysql&gt;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br></div></div><p>通过<code>SHOW TABLES</code>命令可以看到已经改名成功了。</p> <h3 id="方式二："><a href="#方式二：" class="header-anchor">#</a> 方式二：</h3> <div class="language- line-numbers-mode"><pre class="language-text"><code>RENAME TABLE 旧表名1 TO 新表名1, 旧表名2 TO 新表名2, ... 旧表名n TO 新表名n;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>这种改名方式的牛逼之处就是它可以在一条语句中修改多个表的名称。这里就不举例了，自己测试一下吧。</p> <p>如果在修改表名的时候指定了数据库名，还可以将该表转移到对应的数据库下，比方说我们先再创建一个数据库<code>demo2</code>：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>mysql&gt; CREATE DATABASE demo2;
+Query OK, 1 row affected (0.00 sec)
+
+mysql&gt;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div><p>然后把<code>first_table1</code>表转移到这个<code>demo2</code>数据库下：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>mysql&gt; ALTER TABLE first_table1 RENAME TO demo2.first_table1;
+Query OK, 0 rows affected (0.01 sec)
+
+mysql&gt; SHOW TABLES FROM demo2;
++-------------------+
+| Tables_in_demo2 |
++-------------------+
+| first_table1      |
++-------------------+
+1 row in set (0.00 sec)
+
+mysql&gt; SHOW TABLES FROM demo;
++---------------------+
+| Tables_in_demo |
++---------------------+
+| student_info        |
+| student_score       |
++---------------------+
+2 rows in set (0.00 sec)
+
+mysql&gt;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br></div></div><p>可以看到<code>first_table1</code>就从数据库<code>demo</code>转移到<code>demo2</code>里边了。我们再用修改表名的方式二再把该表转移到<code>demo</code>数据库中，并且将其更名为<code>first_table</code>：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>mysql&gt; RENAME TABLE demo2.first_table1 TO demo.first_table;
+Query OK, 0 rows affected (0.00 sec)
+
+mysql&gt;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div><h2 id="表-复制表结构-🔥"><a href="#表-复制表结构-🔥" class="header-anchor">#</a> 表—复制表结构 🔥</h2> <div class="language- line-numbers-mode"><pre class="language-text"><code>CREATE TABLE 表名 LIKE 被复制的表名;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><h2 id="表-修改表的字符集-🔥"><a href="#表-修改表的字符集-🔥" class="header-anchor">#</a> 表—修改表的字符集 🔥</h2> <div class="language- line-numbers-mode"><pre class="language-text"><code>ALTER TABLE 表名 CHARACTER  SET UTF8;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><h2 id=""><a href="#" class="header-anchor">#</a> ===============</h2> <h2 id="列-增加列-🔥"><a href="#列-增加列-🔥" class="header-anchor">#</a> 列—增加列 🔥</h2> <h3 id="语法-2"><a href="#语法-2" class="header-anchor">#</a> 语法</h3> <p>我们可以使用下边的语句来增加表中的列：</p> <div class="language-sql line-numbers-mode"><pre class="language-sql"><code><span class="token keyword">ALTER</span> <span class="token keyword">TABLE</span> 表名 <span class="token keyword">ADD</span> <span class="token punctuation">[</span><span class="token keyword">COLUMN</span><span class="token punctuation">]</span> 列名 数据类型 <span class="token punctuation">[</span>列的属性<span class="token punctuation">]</span><span class="token punctuation">;</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><div class="language-sql line-numbers-mode"><pre class="language-sql"><code><span class="token keyword">ALTER</span> <span class="token keyword">TABLE</span> 表名 <span class="token keyword">ADD</span> <span class="token comment">/*COLUMN*/</span><span class="token punctuation">(</span>
+  列名 列类型 该列所需约束<span class="token punctuation">,</span>
+    列名 列类型 该列所需约束<span class="token punctuation">,</span>
+  <span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span>
+<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token comment">-- MySQL、Oracle、SQL Server中可以不用写COLUMN，PostgreSQL需写上</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br></div></div><p>比如我们向<code>first_table</code>里添加一个名叫<code>third_column</code>的列就可以这么写：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>mysql&gt; ALTER TABLE first_table ADD COLUMN third_column CHAR(4) ;
+Query OK, 0 rows affected (0.05 sec)
+Records: 0  Duplicates: 0  Warnings: 0
+
+mysql&gt; SHOW CREATE TABLE first_table\G
+*************************** 1. row ***************************
+       Table: first_table
+Create Table: CREATE TABLE `first_table` (
+  `first_column` int(11) DEFAULT NULL,
+  `second_column` varchar(100) DEFAULT NULL,
+  `third_column` char(4) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='第一个表'
+1 row in set (0.01 sec)
+
+mysql&gt;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br></div></div><p>通过查看表的结构可以看到<code>third_column</code>列已经添加成功了。</p> <h3 id="增加列到特定位置"><a href="#增加列到特定位置" class="header-anchor">#</a> 增加列到特定位置</h3> <p>默认的情况下列都是加到现有列的最后一列后面，我们也可以在添加列的时候指定它的位置，常用的方式如下：</p> <ul><li><p>添加到第一列：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>ALTER TABLE 表名 ADD COLUMN 列名 列的类型 [列的属性] FIRST;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>让我们把<code>fourth_column</code>插入到第一列：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>mysql&gt; ALTER TABLE first_table ADD COLUMN fourth_column CHAR(4) FIRST;
+Query OK, 0 rows affected (0.04 sec)
+Records: 0  Duplicates: 0  Warnings: 0
+
+mysql&gt; SHOW CREATE TABLE first_table\G
+*************************** 1. row ***************************
+   Table: first_table
+Create Table: CREATE TABLE `first_table` (
+`fourth_column` char(4) DEFAULT NULL,
+`first_column` int(11) DEFAULT NULL,
+`second_column` varchar(100) DEFAULT NULL,
+`third_column` char(4) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='第一个表'
+1 row in set (0.01 sec)
+
+mysql&gt;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br></div></div><p>看到插入成功了。</p></li> <li><p>添加到指定列的后边：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>ALTER TABLE 表名 ADD COLUMN 列名 列的类型 [列的属性] AFTER 指定列名;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>再插入一个<code>fifth_column</code>到<code>first_column</code>后边瞅瞅：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>mysql&gt; ALTER TABLE first_table ADD COLUMN fifth_column CHAR(4) AFTER first_column;
+Query OK, 0 rows affected (0.03 sec)
+Records: 0  Duplicates: 0  Warnings: 0
+
+mysql&gt; SHOW CREATE TABLE first_table\G
+*************************** 1. row ***************************
+       Table: first_table
+Create Table: CREATE TABLE `first_table` (
+  `fourth_column` char(4) DEFAULT NULL,
+  `first_column` int(11) DEFAULT NULL,
+  `fifth_column` char(4) DEFAULT NULL,
+  `second_column` varchar(100) DEFAULT NULL,
+  `third_column` char(4) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='第一个表'
+1 row in set (0.00 sec)
+
+mysql&gt;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br></div></div><p>可以看到<code>fifth_column</code>列就被插到<code>first_column</code>列后边了。</p></li></ul> <h2 id="列-删除列-🔥"><a href="#列-删除列-🔥" class="header-anchor">#</a> 列—删除列 🔥</h2> <div class="language-sql line-numbers-mode"><pre class="language-sql"><code><span class="token keyword">ALTER</span> <span class="token keyword">TABLE</span> 表名 <span class="token keyword">DROP</span> <span class="token comment">/*COLUMN*/</span> 列名<span class="token punctuation">;</span>
+<span class="token comment">-- MySQL、Oracle可以用 (列名，列名...)来删除多个列</span>
+<span class="token comment">-- MySQL、Oracle、SQL Server中可以不用写COLUMN，PostgreSQL需写上</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><p>我们把刚才向<code>first_table</code>里添加几个列都删掉试试：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>mysql&gt; ALTER TABLE first_table DROP COLUMN third_column;
+Query OK, 0 rows affected (0.05 sec)
+Records: 0  Duplicates: 0  Warnings: 0
+
+mysql&gt; ALTER TABLE first_table DROP COLUMN fourth_column;
+Query OK, 0 rows affected (0.05 sec)
+Records: 0  Duplicates: 0  Warnings: 0
+
+mysql&gt; ALTER TABLE first_table DROP COLUMN fifth_column;
+Query OK, 0 rows affected (0.04 sec)
+Records: 0  Duplicates: 0  Warnings: 0
+
+mysql&gt; SHOW CREATE TABLE first_table\G
+*************************** 1. row ***************************
+       Table: first_table
+Create Table: CREATE TABLE `first_table` (
+  `first_column` int(11) DEFAULT NULL,
+  `second_column` varchar(100) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='第一个表'
+1 row in set (0.00 sec)
+
+mysql&gt;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br></div></div><p>从结果中可以看出<code>third_column</code>、<code>fourth_column</code>、<code>fifth_column</code>这几个列都被删除了。</p> <h2 id="列-修改列信息-🔥"><a href="#列-修改列信息-🔥" class="header-anchor">#</a> 列—修改列信息 🔥</h2> <h3 id="修改列的信息"><a href="#修改列的信息" class="header-anchor">#</a> 修改列的信息</h3> <h4 id="方式一（只修改列信息）"><a href="#方式一（只修改列信息）" class="header-anchor">#</a> 方式一（只修改列信息）</h4> <div class="language- line-numbers-mode"><pre class="language-text"><code>ALTER TABLE 表名 MODIFY 列名 新数据类型 [新属性];
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>我们来修改一下<code>first_table</code>表的<code>second_column</code>列，把它的数据类型修改为<code>VARCHAR(2)</code>：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>mysql&gt; ALTER TABLE first_table MODIFY second_column VARCHAR(2);
+Query OK, 0 rows affected (0.04 sec)
+Records: 0  Duplicates: 0  Warnings: 0
+
+mysql&gt; SHOW CREATE TABLE first_table\G
+*************************** 1. row ***************************
+       Table: first_table
+Create Table: CREATE TABLE `first_table` (
+  `first_column` int(11) DEFAULT NULL,
+  `second_column` varchar(2) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='第一个表'
+1 row in set (0.00 sec)
+
+mysql&gt;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br></div></div><p>可以看到<code>second_column</code>的数据类型就已经被修改为<code>VARCHAR(2)</code>了。不过在修改列信息的时候需要注意：<strong>修改后的数据类型和属性一定要兼容表中现有的数据</strong>！比方说原先<code>first_table</code>表的类型是<code>VARCHAR(100)</code>，该类型最多能存储 100 个字符，如果表中的某条记录的<code>second_column</code>列值为<code>'aaa'</code>，也就是占用了 3 个字符，而此时我们尝试使用上边的语句将<code>second_column</code>列的数据类型修改为<code>VARCHAR(2)</code>，那么此时就会报错，因为<code>VARCHAR(2)</code>并不能存储 3 个字符。</p> <h4 id="方式二（顺便修改列名）"><a href="#方式二（顺便修改列名）" class="header-anchor">#</a> 方式二（顺便修改列名）</h4> <div class="language- line-numbers-mode"><pre class="language-text"><code>ALTER TABLE 表名 CHANGE 旧列名 新列名 新数据类型 [新属性];
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>可以看到这种修改方式需要我们填两个列名，也就是说在修改数据类型和属性的同时也可以修改列名！比如我们修改<code>second_column</code>的列名为<code>second_column1</code>：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>mysql&gt; ALTER TABLE first_table CHANGE second_column second_column1 VARCHAR(2)\G
+Query OK, 0 rows affected (0.04 sec)
+Records: 0  Duplicates: 0  Warnings: 0
+
+mysql&gt; SHOW CREATE TABLE first_table\G
+*************************** 1. row ***************************
+       Table: first_table
+Create Table: CREATE TABLE `first_table` (
+  `first_column` int(11) DEFAULT NULL,
+  `second_column1` varchar(2) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='第一个表'
+1 row in set (0.00 sec)
+
+mysql&gt;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br></div></div><p>可以看到结果中<code>second_column</code>的列名已经被修改为了<code>second_column1</code>，不过我们并没有改动该列的数据类型和属性，所以直接把旧的数据类型和属性抄过来就好了。不过在修改列信息的时候需要注意：<strong>修改后的数据类型和属性一定要兼容表中现有的数据</strong>！</p> <h4 id="方式三（仅修改列名）"><a href="#方式三（仅修改列名）" class="header-anchor">#</a> 方式三（仅修改列名）</h4> <div class="language-sql line-numbers-mode"><pre class="language-sql"><code><span class="token keyword">ALTER</span> <span class="token keyword">TABLE</span> player <span class="token keyword">RENAME</span> <span class="token keyword">COLUMN</span> age <span class="token keyword">to</span> player_age <span class="token comment">-- RENAME也可以</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><h3 id="修改列排列位置"><a href="#修改列排列位置" class="header-anchor">#</a> 修改列排列位置</h3> <p>如果我们觉得当前列的顺序有问题的话，可以使用下边这几条语句进行修改：</p> <ol><li><p>将列设为表的第一列：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>ALTER TABLE 表名 MODIFY 列名 列的类型 列的属性 FIRST;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>先看一下现在表<code>first_table</code>的各个列的排列顺序：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>mysql&gt; SHOW CREATE TABLE first_table\G
+*************************** 1. row ***************************
+       Table: first_table
+Create Table: CREATE TABLE `first_table` (
+  `first_column` int(11) DEFAULT NULL,
+  `second_column1` varchar(2) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='第一个表'
+1 row in set (0.00 sec)
+
+mysql&gt;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br></div></div><p>可以看到，列的顺序依次是：<code>first_column</code>、<code>second_column1</code>。现在我们想把<code>second_column</code>放在第一列可以这么写：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>mysql&gt; ALTER TABLE first_table MODIFY second_column1 VARCHAR(2) FIRST;
+Query OK, 0 rows affected (0.02 sec)
+Records: 0  Duplicates: 0  Warnings: 0
+
+mysql&gt; SHOW CREATE TABLE first_table\G
+*************************** 1. row ***************************
+       Table: first_table
+Create Table: CREATE TABLE `first_table` (
+  `second_column1` varchar(2) DEFAULT NULL,
+  `first_column` int(11) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='第一个表'
+1 row in set (0.00 sec)
+
+mysql&gt;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br></div></div><p>看到<code>second_column1</code>已经成为第一列了！</p></li> <li><p>将列放到指定列的后边：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>ALTER TABLE 表名 MODIFY 列名 列的类型 列的属性 AFTER 指定列名;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>比方说我们想把<code>second_column1</code>再放到<code>first_column</code>后边可以这么写：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>mysql&gt; ALTER TABLE first_table MODIFY second_column1 VARCHAR(2) AFTER first_column;
+Query OK, 0 rows affected (0.03 sec)
+Records: 0  Duplicates: 0  Warnings: 0
+
+mysql&gt; SHOW CREATE TABLE first_table\G
+*************************** 1. row ***************************
+       Table: first_table
+Create Table: CREATE TABLE `first_table` (
+  `first_column` int(11) DEFAULT NULL,
+  `second_column1` varchar(2) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='第一个表'
+1 row in set (0.00 sec)
+
+mysql&gt;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br></div></div></li></ol> <h2 id="列-一条语句中包含多个修改操作-🔥"><a href="#列-一条语句中包含多个修改操作-🔥" class="header-anchor">#</a> 列—一条语句中包含多个修改操作 🔥</h2> <p>如果对同一个表有多个修改操作的话，我们可以把它们放到一条语句中执行，就像这样：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>ALTER TABLE 表名 操作1, 操作2, ..., 操作n;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>上边我们在演示删除列操作的时候用三条语句连着删了<code>third_column</code>、<code>fourth_column</code>和<code>fifth_column</code>这三个列，其实这三条语句可以合并为一条：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>ALTER TABLE first_table DROP COLUMN third_column, DROP COLUMN fourth_column, DROP COLUMN fifth_column;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>这样人敲的语句也少了，服务器也不用分多次执行从而效率也高了，何乐而不为呢？</p> <h2 id="-2"><a href="#-2" class="header-anchor">#</a> ===============</h2> <h2 id="列的属性（约束）"><a href="#列的属性（约束）" class="header-anchor">#</a> 列的属性（约束）</h2> <h3 id="主键-🔥"><a href="#主键-🔥" class="header-anchor">#</a> 主键 🔥</h3> <p>有时候在我们的表里可以通过某个列或者某些列确定唯一的一条记录，我们就可以把这个列或者这些列称为<code>候选键</code>。比如在学生信息表<code>student_info</code>中，只要我们知道某个学生的学号，就可以确定一个唯一的学生信息，也就是一条记录。当然，我们也可以通过身份证号来确定唯一的一条学生信息记录，所以<code>学号</code>和<code>身份证号</code>都可以作为学生信息表的<code>候选键</code>。在学生成绩表<code>student_score</code>中，我们可以通过<code>学号</code>和<code>科目</code>这两个列的组合来确定唯一的一条成绩记录，所以<code>学号、科目</code>这两个列的组合可以作为学生成绩表的<code>候选键</code>。</p> <p>一个表可能有多个候选键，我们可以选择一个候选键作为表的<code>主键</code>。一个表最多只能有一个主键，主键的值不能重复，通过主键可以找到唯一的一条记录。如果我们的表中有定义主键的需求可以选用下边这两种方式之一来指定主键：</p> <ol><li><p>如果主键只是单个列的话，可以直接在该列后声明<code>PRIMARY KEY</code>，比如我们把学生信息表<code>student_info</code>的<code>学号</code>列声明为主键可以这么写：</p> <div class="language-sql line-numbers-mode"><pre class="language-sql"><code><span class="token keyword">CREATE</span> <span class="token keyword">TABLE</span> student_info <span class="token punctuation">(</span>
+    number <span class="token keyword">INT</span> <span class="token keyword">PRIMARY</span> <span class="token keyword">KEY</span><span class="token punctuation">,</span>
+    name <span class="token keyword">VARCHAR</span><span class="token punctuation">(</span><span class="token number">5</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+    sex <span class="token keyword">ENUM</span><span class="token punctuation">(</span><span class="token string">'男'</span><span class="token punctuation">,</span> <span class="token string">'女'</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+    id_number <span class="token keyword">CHAR</span><span class="token punctuation">(</span><span class="token number">18</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+    department <span class="token keyword">VARCHAR</span><span class="token punctuation">(</span><span class="token number">30</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+    major <span class="token keyword">VARCHAR</span><span class="token punctuation">(</span><span class="token number">30</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+    enrollment_time <span class="token keyword">DATE</span>
+<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br></div></div></li> <li><p>我们也可以把主键的声明单独提取出来，用这样的形式声明：</p> <div class="language-sql line-numbers-mode"><pre class="language-sql"><code><span class="token keyword">PRIMARY</span> <span class="token keyword">KEY</span> <span class="token punctuation">(</span>列名<span class="token number">1</span><span class="token punctuation">,</span> 列名<span class="token number">2</span><span class="token punctuation">,</span> <span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">)</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>然后把这个主键声明放到列定义的后边就好了。比如<code>student_info</code>的<code>学号</code>列声明为主键也可以这么写：</p> <div class="language-sql line-numbers-mode"><pre class="language-sql"><code><span class="token keyword">CREATE</span> <span class="token keyword">TABLE</span> student_info <span class="token punctuation">(</span>
+    number <span class="token keyword">INT</span><span class="token punctuation">,</span>
+    name <span class="token keyword">VARCHAR</span><span class="token punctuation">(</span><span class="token number">5</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+    sex <span class="token keyword">ENUM</span><span class="token punctuation">(</span><span class="token string">'男'</span><span class="token punctuation">,</span> <span class="token string">'女'</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+    id_number <span class="token keyword">CHAR</span><span class="token punctuation">(</span><span class="token number">18</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+    department <span class="token keyword">VARCHAR</span><span class="token punctuation">(</span><span class="token number">30</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+    major <span class="token keyword">VARCHAR</span><span class="token punctuation">(</span><span class="token number">30</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+    enrollment_time <span class="token keyword">DATE</span><span class="token punctuation">,</span>
+    <span class="token keyword">PRIMARY</span> <span class="token keyword">KEY</span> <span class="token punctuation">(</span>number<span class="token punctuation">)</span>
+<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br></div></div><p>值得注意的是，对于多个列的组合作为主键的情况，必须使用这种单独声明的形式，比如<code>student_score</code>表里的<code>学号,科目</code>的列组合作为主键，可以这么写：</p> <div class="language-sql line-numbers-mode"><pre class="language-sql"><code><span class="token keyword">CREATE</span> <span class="token keyword">TABLE</span> student_score <span class="token punctuation">(</span>
+    number <span class="token keyword">INT</span><span class="token punctuation">,</span>
+    subject <span class="token keyword">VARCHAR</span><span class="token punctuation">(</span><span class="token number">30</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+    score <span class="token keyword">TINYINT</span><span class="token punctuation">,</span>
+    <span class="token keyword">PRIMARY</span> <span class="token keyword">KEY</span> <span class="token punctuation">(</span>number<span class="token punctuation">,</span> subject<span class="token punctuation">)</span>
+<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br></div></div><p>在我们创建表的时候就声明了主键的话，<code>MySQL</code>会对我们插入的记录做校验，如果新插入记录的主键值已经在表中存在了，那就会报错。</p> <p>另外，主键列默认是有<code>NOT NULL</code>属性，也就是必填的，如果填入<code>NULL</code>值会报错(先删除原来的<code>student_info</code>表，使用刚才所说的两种方式之一重新创建表之后仔执行下边的语句)：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>mysql&gt; INSERT INTO student_info(number) VALUES(NULL);
+ERROR 1048 (23000): Column 'number' cannot be null
+mysql&gt;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div></li></ol> <h3 id="unique-属性-🔥"><a href="#unique-属性-🔥" class="header-anchor">#</a> UNIQUE 属性 🔥</h3> <p>对于不是主键的其他候选键，如果也想让<code>MySQL</code>在我们向表中插入新记录的时候帮助我们校验一下某个列或者列组合的值是否重复，那么我们可以把这个列或列组合添加一个<code>UNIQUE</code>属性，表明该列或者列组合的值是不允许重复的。与我们在建表语句中声明主键的方式类似，为某个列声明<code>UNIQUE</code>属性的方式也有两种：</p> <ol><li><p>如果我们想为单个列声明<code>UNIQUE</code>属性，可以直接在该列后填写<code>UNIQUE</code>或者<code>UNIQUE KEY</code>，比如在学生信息表<code>student_info</code>中，我们不允许两条学生基本信息记录中的身份证号是一样的，那我们可以为<code>id_number</code>列添加<code>UNIQUE</code>属性：</p> <div class="language-sql line-numbers-mode"><pre class="language-sql"><code><span class="token keyword">CREATE</span> <span class="token keyword">TABLE</span> student_info <span class="token punctuation">(</span>
+    number <span class="token keyword">INT</span> <span class="token keyword">PRIMARY</span> <span class="token keyword">KEY</span><span class="token punctuation">,</span>
+    name <span class="token keyword">VARCHAR</span><span class="token punctuation">(</span><span class="token number">5</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+    sex <span class="token keyword">ENUM</span><span class="token punctuation">(</span><span class="token string">'男'</span><span class="token punctuation">,</span> <span class="token string">'女'</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+    id_number <span class="token keyword">CHAR</span><span class="token punctuation">(</span><span class="token number">18</span><span class="token punctuation">)</span> <span class="token keyword">UNIQUE</span><span class="token punctuation">,</span>
+    department <span class="token keyword">VARCHAR</span><span class="token punctuation">(</span><span class="token number">30</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+    major <span class="token keyword">VARCHAR</span><span class="token punctuation">(</span><span class="token number">30</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+    enrollment_time <span class="token keyword">DATE</span>
+<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br></div></div></li> <li><p>我们也可以把<code>UNIQUE</code>属性的声明单独提取出来，用这样的形式声明：</p> <div class="language-sql line-numbers-mode"><pre class="language-sql"><code><span class="token keyword">UNIQUE</span> <span class="token punctuation">[</span>约束名称<span class="token punctuation">]</span> <span class="token punctuation">(</span>列名<span class="token number">1</span><span class="token punctuation">,</span> 列名<span class="token number">2</span><span class="token punctuation">,</span> <span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">)</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>或者：</p> <div class="language-sql line-numbers-mode"><pre class="language-sql"><code><span class="token keyword">UNIQUE</span> <span class="token keyword">KEY</span> <span class="token punctuation">[</span>约束名称<span class="token punctuation">]</span> <span class="token punctuation">(</span>列名<span class="token number">1</span><span class="token punctuation">,</span> 列名<span class="token number">2</span><span class="token punctuation">,</span> <span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">)</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>其实每当我们为某个列添加了一个<code>UNIQUE</code>属性，就像是在孙悟空头上带了个紧箍咒一样，从此我们插入的记录的该列的值就不能重复，所以为某个列添加一个<code>UNIQUE</code>属性也可以认为是为这个表添加了一个<code>约束</code>，我们就称之为<code>UNIQUE</code>约束。每个约束都可以有一个名字，像主键也算是一个约束，它的名字就是默认的<code>PRIMARY</code>。不过一个表中可以为不同的列添加多个<code>UNIQUE</code>属性，也就是添加多个<code>UNIQUE</code>约束，每添加一个<code>UNIQUE</code>约束，我们就可以给它起个名，这也是上边的<code>约束名称</code>的含义。不过<code>约束名称</code>是被中括号<code>[]</code>扩起来的，意味着我们写不写都可以，如果不写的话<code>MySQL</code>自己会帮我们起名。其实就像是自己生了个孩子，如果自己不起名的话，人家公安局的警察叔叔也得给孩子起个名上户口。</p> <p>为约束起名的事儿理解了之后，我们把这个<code>UNIQUE</code>属性的声明放到列定义的后边就好了。比如我们为<code>student_info</code>表的<code>id_number</code>（身份证号）列添加<code>UNIQUE</code>属性也可以这么写：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>CREATE TABLE student_info (
+    number INT PRIMARY KEY,
+    name VARCHAR(5),
+    sex ENUM('男', '女'),
+    id_number CHAR(18),
+    department VARCHAR(30),
+    major VARCHAR(30),
+    enrollment_time DATE,
+    UNIQUE KEY uk_id_number (id_number)
+);
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br></div></div><p>可以看到，我们给这个<code>UNIQUE</code>约束起的名儿就是<code>uk_id_number</code>。</p> <p>不过值得注意的是，对于多个列的组合具有<code>UNIQUE</code>属性的情况，必须使用这种单独声明的形式。</p> <p>如果表中为某个列或者列组合定义了<code>UNIQUE</code>属性的话，<code>MySQL</code>会对我们插入的记录做校验，如果新插入记录在该列或者列组合的值已经在表中存在了，那就会报错！</p></li></ol> <h3 id="主键和-unique-约束的区别"><a href="#主键和-unique-约束的区别" class="header-anchor">#</a> 主键和 UNIQUE 约束的区别</h3> <p>主键和<code>UNIQUE</code>约束都能保证某个列或者列组合的唯一性，但是：</p> <ol><li>一张表中只能定义一个主键，却可以定义多个<code>UNIQUE</code>约束！</li> <li>规定：主键列不允许存放 NULL，而声明了<code>UNIQUE</code>属性的列可以存放<code>NULL</code>，而且<code>NULL</code>可以重复地出现在多条记录中！</li> <li><strong>这俩约束的列会自动添加索引</strong>！</li></ol> <div class="custom-block tip"><p class="custom-block-title">提示</p> <p>小贴士： 一个表的某个列声明了 UNIQUE 属性，那这个列的值不就不可以重复了么，为啥 NULL 这么特殊？哈哈，NULL 就是这么特殊。NULL 其实并不是一个值，它代表不确定，我们平常说某个列的值为 NULL，意味着这一列的值尚未被填入。</p></div> <h3 id="not-null-属性-🔥"><a href="#not-null-属性-🔥" class="header-anchor">#</a> NOT NULL 属性 🔥</h3> <p>有时候我们需要要求表中的某些列中必须有值，不能存放<code>NULL</code>，那么可以用这样的语法来定义这个列：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>列名 列的类型 NOT NULL
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>比如我们把<code>first_table</code>表的<code>first_column</code>列定义一个<code>NOT NULL</code>属性。当然，我们在重新定义表之前需要把原来的表删掉：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>mysql&gt; DROP TABLE first_table;
+Query OK, 0 rows affected (0.00 sec)
+
+mysql&gt; CREATE TABLE first_table (
+    -&gt;     first_column INT NOT NULL,
+    -&gt;     second_column VARCHAR(100) DEFAULT 'abc'
+    -&gt; );
+Query OK, 0 rows affected (0.02 sec)
+
+mysql&gt;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br></div></div><p>这样的话，我们就不能再往这个字段里插入<code>NULL</code>值了，比如这样：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>mysql&gt; INSERT INTO first_table(first_column, second_column) VALUES(NULL, 'aaa');
+ERROR 1048 (23000): Column 'first_column' cannot be null
+mysql&gt;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><p>看到报了个错，提示<code>first_column</code>列不能存储<code>NULL</code>。</p> <p>另外，一旦对某个列定义了<code>NOT NULL</code>属性，那这个列的默认值就不为<code>NULL</code>了。上边<code>first_column</code>并没有指定默认值，意味着我们在使用<code>INSERT</code>插入行时必须显式的指定这个列的值，而不能省略它，比如这样就会报错的：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>mysql&gt; INSERT INTO first_table(second_column) VALUES('aaa');
+ERROR 1364 (HY000): Field 'first_column' doesn't have a default value
+mysql&gt;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><p>可以看到执行结果提示我们<code>first_column</code>并没有设置默认值，所以在使用<code>INSERT</code>语句插入记录的时候不能省略掉这个列的值。</p> <p><strong>尽量避免存储 NULL，查询不便，索引效率不高</strong></p> <h3 id="默认值-🔥"><a href="#默认值-🔥" class="header-anchor">#</a> 默认值 🔥</h3> <p>在书写<code>INSERT</code>语句插入记录的时候可以只指定部分的列，那些没有被显式指定的列的值将被设置为<code>NULL</code>，换一种说法就是列的默认值为<code>NULL</code>，<code>NULL</code>的含义是这个列的值还没有被设置。如果我们不想让默认值为<code>NULL</code>，而是设置成某个有意义的值，可以在定义列的时候给该列增加一个<code>DEFAULT</code>属性，就像这样：</p> <div class="language-sql line-numbers-mode"><pre class="language-sql"><code>列名 列的类型 <span class="token keyword">DEFAULT</span> 默认值
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>比如我们把<code>first_table</code>的<code>second_column</code>列的默认值指定为<code>'abc'</code>，创建一下这个表：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>mysql&gt; CREATE TABLE first_table (
+    -&gt;     first_column INT,
+    -&gt;     second_column VARCHAR(100) DEFAULT 'abc'
+    -&gt; );
+Query OK, 0 rows affected (0.02 sec)
+
+mysql&gt;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br></div></div><p>然后插入一条数据后看看默认值是不是起了作用：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>mysql&gt; INSERT INTO first_table(first_column) VALUES(1);
+Query OK, 1 row affected (0.00 sec)
+
+mysql&gt; SELECT * FROM first_table;
++--------------+---------------+
+| first_column | second_column |
++--------------+---------------+
+|            1 | abc           |
++--------------+---------------+
+1 row in set (0.00 sec)
+
+mysql&gt;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br></div></div><p>我们的插入语句并没有指定<code>second_column</code>的值，但是可以看到插入结果是按照我们规定的默认值<code>'abc'</code>来设置的。</p> <p>如果我们不设置默认值，其实就相当于指定的默认值为<code>NULL</code>，比如<code>first_table</code>表并没有设置<code>first_column</code>列的默认值，那它的默认值就是<code>NULL</code>，也就是说上边的表定义语句和下边这个是等价的：</p> <div class="language-sql line-numbers-mode"><pre class="language-sql"><code><span class="token keyword">CREATE</span> <span class="token keyword">TABLE</span> first_table <span class="token punctuation">(</span>
+    first_column <span class="token keyword">INT</span> <span class="token keyword">DEFAULT</span> <span class="token boolean">NULL</span><span class="token punctuation">,</span>
+    second_column <span class="token keyword">VARCHAR</span><span class="token punctuation">(</span><span class="token number">100</span><span class="token punctuation">)</span> <span class="token keyword">DEFAULT</span> <span class="token string">'abc'</span>
+<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div><p>这个从<code>SHOW CREATE TABLE</code>语句中也可以看出来：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>mysql&gt; SHOW CREATE TABLE first_table\G
+*************************** 1. row ***************************
+       Table: first_table
+Create Table: CREATE TABLE `first_table` (
+  `first_column` int(11) DEFAULT NULL,
+  `second_column` varchar(100) DEFAULT 'abc'
+) ENGINE=InnoDB DEFAULT CHARSET=utf8
+1 row in set (0.00 sec)
+
+mysql&gt;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br></div></div><h3 id="外键"><a href="#外键" class="header-anchor">#</a> 外键</h3> <p>插入到学生成绩表<code>student_score</code>中的<code>number</code>(学号)列中的值必须能在学生基本信息表<code>student_info</code>中的<code>number</code>列中找到，否则如果一个学号只在成绩表里出现，而在基本信息表里找不到相应的记录的话，就相当于插入了不知道是哪个学生的成绩，这显然是荒谬的。为了防止这样荒谬的情况出现，<code>MySQL</code>给我们提供了外键约束机制。定义外键的语法是这样的：</p> <div class="language-sql line-numbers-mode"><pre class="language-sql"><code><span class="token keyword">CONSTRAINT</span> <span class="token punctuation">[</span>外键名称<span class="token punctuation">]</span> <span class="token keyword">FOREIGN</span> <span class="token keyword">KEY</span><span class="token punctuation">(</span>列<span class="token number">1</span><span class="token punctuation">,</span> 列<span class="token number">2</span><span class="token punctuation">,</span> <span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">)</span> <span class="token keyword">REFERENCES</span> 父表名<span class="token punctuation">(</span>父列<span class="token number">1</span><span class="token punctuation">,</span> 父列<span class="token number">2</span><span class="token punctuation">,</span> <span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>其中的<code>外键名称</code>也是可选的，一个名字而已，我们不自己命名的话，MySQL 自己会帮助我们命名。</p> <p>如果 A 表中的某个列或者某些列依赖与 B 表中的某个列或者某些列，那么就称 A 表为<code>子表</code>，B 表为<code>父表</code>。子表和父表可以使用外键来关联起来，上边例子中<code>student_score</code>表的<code>number</code>列依赖于<code>student_info</code>的<code>number</code>列，所以<code>student_info</code>就是一个父表，<code>student_score</code>就是子表。我们可以在<code>student_score</code>的建表语句中来定义一个外键：</p> <div class="language-sql line-numbers-mode"><pre class="language-sql"><code><span class="token keyword">CREATE</span> <span class="token keyword">TABLE</span> student_score <span class="token punctuation">(</span>
+    number <span class="token keyword">INT</span><span class="token punctuation">,</span>
+    subject <span class="token keyword">VARCHAR</span><span class="token punctuation">(</span><span class="token number">30</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+    score <span class="token keyword">TINYINT</span><span class="token punctuation">,</span>
+    <span class="token keyword">PRIMARY</span> <span class="token keyword">KEY</span> <span class="token punctuation">(</span>number<span class="token punctuation">,</span> subject<span class="token punctuation">)</span><span class="token punctuation">,</span>
+    <span class="token keyword">CONSTRAINT</span> <span class="token keyword">FOREIGN</span> <span class="token keyword">KEY</span><span class="token punctuation">(</span>number<span class="token punctuation">)</span> <span class="token keyword">REFERENCES</span> student_info<span class="token punctuation">(</span>number<span class="token punctuation">)</span>
+<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br></div></div><p>这样，在对<code>student_score</code>表插入数据的时候，<code>MySQL</code>都会为我们检查一下插入的学号是否能在<code>student_info</code>表中找到，如果找不到则会报错。</p> <div class="custom-block tip"><p class="custom-block-title">提示</p> <p>小贴士： <strong>父表中被子表依赖的列或者列组合必须建立索引，如果该列或者列组合已经是主键或者有 UNIQUE 属性，那么它们也就被默认建立了索引</strong>。示例中 student_score 表依赖于 stuent_info 表的 number 列，而 number 列又是 stuent_info 的主键（注意上一章定义的 student_info 结构中没有把 number 列定义为主键，本章才将其定义为主键，如果你的机器上还没有将其定义为主键的话，赶紧修改表结构呗～），所以在 student_score 表中创建外键是没问题的。 当然至于什么是索引，不是我们从零蛋开始学习 MySQL 的同学们需要关心的事，等学完本书之后再去看《MySQL 是怎样运行的：从根儿上理解 MySQL》就懂了。</p></div> <h3 id="auto-increment-属性"><a href="#auto-increment-属性" class="header-anchor">#</a> AUTO_INCREMENT 属性</h3> <p><code>AUTO_INCREMENT</code>翻译成中文可以理解为<code>自动增长</code>，简称自增。如果一个表中的某个列的数据类型是整数类型或者浮点数类型，那么这个列可以设置<code>AUTO_INCREMENT</code>属性。当我们把某个列设置了<code>AUTO_INCREMENT</code>属性之后，如果我们在<strong>插入新记录</strong>的时候<strong>不指定该列的值</strong>，或者将该列的值<strong>显式地指定为<code>NULL</code>或者<code>0</code></strong>，那么新插入的记录在该列上的值就是<strong>当前该列的最大值加 1 后的值</strong>（有一点点绕，稍后一举例子大家就明白了）。我们可以用这样的语法来定义这个列：</p> <div class="language-sql line-numbers-mode"><pre class="language-sql"><code>列名 列的类型 <span class="token keyword">AUTO_INCREMENT</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>比如我们想在<code>first_table</code>表里设置一个名为<code>id</code>的列，把这个列设置为主键，来唯一标记一条记录，然后让其拥有<code>AUTO_INCREMENT</code>属性，我们可以这么写：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>mysql&gt; DROP TABLE first_table;
+Query OK, 0 rows affected (0.00 sec)
+
+mysql&gt; CREATE TABLE first_table (
+    -&gt;     id INT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+    -&gt;     first_column INT,
+    -&gt;     second_column VARCHAR(100) DEFAULT 'abc'
+    -&gt; );
+Query OK, 0 rows affected (0.01 sec)
+
+mysql&gt;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br></div></div><p>先把原来的表删掉，然后在新表中增加了一个非负<code>INT</code>类型的<code>id</code>列，把它设置为主键而且具有<code>AUTO_INCREMENT</code>属性，那我们在插入新记录时可以忽略掉这个列，或者将列值显式地指定为<code>NULL</code>或<code>0</code>，但是它的值将会递增，看：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>mysql&gt; INSERT INTO first_table(first_column, second_column) VALUES(1, 'aaa');
+Query OK, 1 row affected (0.01 sec)
+
+mysql&gt; INSERT INTO first_table(id, first_column, second_column) VALUES(NULL, 1, 'aaa');
+Query OK, 1 row affected (0.00 sec)
+
+mysql&gt; INSERT INTO first_table(id, first_column, second_column) VALUES(0, 1, 'aaa');
+Query OK, 1 row affected (0.01 sec)
+
+mysql&gt; SELECT * FROM first_table;
++----+--------------+---------------+
+| id | first_column | second_column |
++----+--------------+---------------+
+|  1 |            1 | aaa           |
+|  2 |            1 | aaa           |
+|  3 |            1 | aaa           |
++----+--------------+---------------+
+3 rows in set (0.01 sec)
+
+mysql&gt;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br></div></div><p>可以看到，列<code>id</code>是从 1 开始递增的。在为列定义<code>AUTO_INCREMENT</code>属性的时候需要注意这几点：</p> <ol><li>一个表中<strong>最多有一个具有 AUTO_INCREMENT 属性的列</strong>。</li> <li>具有 AUTO_INCREMENT 属性的列<strong>必须建立索引</strong>。<strong>主键和具有<code>UNIQUE</code>属性的列会自动建立索引</strong>。不过至于什么是索引，在学习 MySQL 进阶的时候才会介绍。</li> <li><strong>拥有 AUTO_INCREMENT 属性的列就不能再通过指定 DEFAULT 属性来指定默认值</strong>。</li> <li>一般<strong>拥有 AUTO_INCREMENT 属性的列都是作为主键的属性</strong>，来自动生成唯一标识一条记录的主键值。</li></ol> <h3 id="列的注释"><a href="#列的注释" class="header-anchor">#</a> 列的注释</h3> <p>在建表语句的末尾可以添加<code>COMMENT</code>语句来给表添加注释，其实我们也可以在每一个列末尾添加<code>COMMENT</code>语句来为列来添加注释，比方说：</p> <div class="language-sql line-numbers-mode"><pre class="language-sql"><code><span class="token keyword">CREATE</span> <span class="token keyword">TABLE</span> first_table <span class="token punctuation">(</span>
+    id <span class="token keyword">int</span> <span class="token keyword">UNSIGNED</span> <span class="token keyword">AUTO_INCREMENT</span> <span class="token keyword">PRIMARY</span> <span class="token keyword">KEY</span> <span class="token keyword">COMMENT</span> <span class="token string">'自增主键'</span><span class="token punctuation">,</span>
+    first_column <span class="token keyword">INT</span> <span class="token keyword">COMMENT</span> <span class="token string">'第一列'</span><span class="token punctuation">,</span>
+    second_column <span class="token keyword">VARCHAR</span><span class="token punctuation">(</span><span class="token number">100</span><span class="token punctuation">)</span> <span class="token keyword">DEFAULT</span> <span class="token string">'abc'</span> <span class="token keyword">COMMENT</span> <span class="token string">'第二列'</span>
+<span class="token punctuation">)</span> <span class="token keyword">COMMENT</span> <span class="token string">'第一个表'</span><span class="token punctuation">;</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><h3 id="影响展示外观的-zerofill-属性"><a href="#影响展示外观的-zerofill-属性" class="header-anchor">#</a> 影响展示外观的 ZEROFILL 属性</h3> <p>下边是正整数<code>3</code>的三种写法：</p> <ul><li>写法一：<code>3</code></li> <li>写法二：<code>003</code></li> <li>写法三：<code>000003</code></li></ul> <p>有的同学笑了，这不是脱了裤子放屁么，我在<code>3</code>前边加上一万个<code>0</code>最终的值也是<code>0</code>呀，这有啥用？提出这类问题的同学肯定没有艺术细胞，它们长的不一样啊 —— 有的数字前边没 0，有的数字前边 0 少，有的数字前边 0 多，可能有的人就觉得在数字前头补一堆 0 长得好看呢？</p> <p>对于无符号整数类型的列，我们可以在查询数据的时候让数字左边补 0，如果想实现这个效果需要给该列加一个<code>ZEROFILL</code>属性（也可以理解为这是一个属于数据类型的属性），就像这样：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>mysql&gt; CREATE TABLE zerofill_table (
+    -&gt;     i1 INT UNSIGNED ZEROFILL,
+    -&gt;     i2 INT UNSIGNED
+    -&gt; );
+Query OK, 0 rows affected (0.03 sec)
+
+mysql&gt;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br></div></div><p>我们在<code>zerofill_table</code>表中创建了两个无符号整数列，不同的是<code>i1</code>列具有<code>ZEROFILL</code>属性，下边我们为这个表插入一条记录：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>mysql&gt; INSERT INTO zerofill_table(i1, i2) VALUES(1, 1);
+Query OK, 1 row affected (0.00 sec)
+
+mysql&gt;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div><p>然后我们使用查询语句来展示一下刚插入的数据：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>mysql&gt; SELECT * FROM zerofill_table;
++------------+------+
+| i1         | i2   |
++------------+------+
+| 0000000001 |    1 |
++------------+------+
+1 row in set (0.00 sec)
+
+mysql&gt;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br></div></div><p>对于具有<code>ZEROFILL</code>属性的<code>i1</code>列，在显示的时候在数字前边补了一堆 0，仔细数数发现是 9 个 0，而没有<code>ZEROFILL</code>属性的<code>i2</code>列，在显示的时候并没有在数字前补 0。为什么<code>i1</code>列会补 9 个 0 呢？我们查看一下<code>zerofill_table</code>的表结构：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>mysql&gt; SHOW CREATE TABLE zerofill_table\G
+*************************** 1. row ***************************
+       Table: zerofill_table
+Create Table: CREATE TABLE `zerofill_table` (
+  `i1` int(10) unsigned zerofill DEFAULT NULL,
+  `i2` int(10) unsigned DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1
+1 row in set (0.01 sec)
+
+mysql&gt;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br></div></div><p>可以看到，其实<code>i1</code>和<code>i2</code>列的类型<code>INT</code>后边都加了一个<code>(10)</code>，这个<code>10</code>就是所谓的<code>显示宽度</code>。<code>显示宽度</code>是在查询语句显示的结果中，如果声明了 <strong>ZEROFILL</strong> 属性的整数列的实际值的位数小于显示宽度时，会在实际值的左侧补 0，使补 0 的位数和实际值的位数相加正好等于显示宽度。我们也可以自己指定显示宽度，比方说这样：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>mysql&gt; DROP TABLE zerofill_table;
+Query OK, 0 rows affected (0.00 sec)
+
+mysql&gt; CREATE TABLE zerofill_table (
+    -&gt;     i1 INT(5) UNSIGNED ZEROFILL,
+    -&gt;     i2 INT UNSIGNED
+    -&gt; );
+Query OK, 0 rows affected (0.02 sec)
+
+mysql&gt; INSERT INTO zerofill_table(i1, i2) VALUES(1, 1);
+Query OK, 1 row affected (0.01 sec)
+
+mysql&gt; SELECT * FROM zerofill_table;
++-------+------+
+| i1    | i2   |
++-------+------+
+| 00001 |    1 |
++-------+------+
+1 row in set (0.00 sec)
+
+mysql&gt;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br></div></div><p>新创建的表中，<code>i1</code>字段的显示宽度是 5，所以最后的显示结果中补了 4 个 0。不过在使用<code>ZEROFILL</code>属性时应该注意下边几点：</p> <ul><li><p>在展示查询结果时，某列数据自动补 0 的条件有这几个：</p> <ul><li>该列必须是整数类型的</li> <li>该列必须有<code>UNSIGNED ZEROFILL</code>的属性</li> <li>该列的实际值的位数必须小于显示宽度</li></ul></li> <li><p>在创建表的时候，如果声明了<code>ZEROFILL</code>属性的列<strong>没有声明<code>UNSIGNED</code>属性，那<code>MySQL</code>会为该列自动生成<code>UNSIGNED</code>属性</strong>。</p> <p>也就是说如果我们创建表语句是这样的：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>CREATE TABLE zerofill_table (
+    i1 INT ZEROFILL,
+    i2 INT UNSIGNED
+);
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div><p><code>MySQL</code>会自动帮我们为<code>i1</code>列加上<code>UNSIGNED</code>属性，也就是这样：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>CREATE TABLE zerofill_table (
+    i1 INT UNSIGNED ZEROFILL,
+    i2 INT UNSIGNED
+);
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div><p>也就是说<code>MySQL</code>现在只支持对无符号整数进行自动补 0 的操作。</p></li> <li><p><strong>每个整数类型都会有默认的显示宽度</strong>。</p> <p>比如<code>TINYINT</code>的默认显示宽度是<code>4</code>，<code>INT</code>的默认显示宽度是<code>(11)</code>... 如果加了<code>UNSIGNED</code>属性，则该类型的显示宽度减 1，比如<code>TINYINT UNSIGNED</code>的显示宽度是<code>3</code>，<code>INT UNSIGNED</code>的显示宽度是<code>10</code>。</p></li> <li><p>显示宽度并<strong>不会影响实际类型的实际存储空间</strong>。</p> <p>显示宽度<strong>仅仅是在展示查询结果时</strong>，如果整数的位数不够显示宽度的情况下起作用的，并不影响该数据类型要求的存储空间以及该类型能存储的数据范围，也就是说<code>INT(1)</code>和<code>INT(10)</code>仅仅在展示时可能有区别，在别的方面没有任何区别。比方说<code>zerofill_table</code>表中<code>i1</code>列的显示宽度是 5，而数字<code>12345678</code>的位数是 8，它照样可以被填入<code>i1</code>列中：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>mysql&gt; INSERT INTO zerofill_table(i1, i2) VALUES(12345678, 12345678);
+Query OK, 1 row affected (0.01 sec)
+
+mysql&gt;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div></li> <li><p><strong>只有列的实际值的位数小于显示宽度时才会补 0，实际值的位数大于显示宽度时照原样输出</strong>。</p> <p>比方说我们刚刚把<code>12345678</code>存到了<code>i1</code>列里，在展示这个值时，并不会截短显示的数据，而是照原样输出：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>mysql&gt; SELECT * FROM zero_table;
++----------+----------+
+| i1       | i2       |
++----------+----------+
+|    00001 |        1 |
+| 12345678 | 12345678 |
++----------+----------+
+2 rows in set (0.00 sec)
+
+mysql&gt;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br></div></div></li> <li><p><strong>对于没有声明<code>ZEROFILL</code>属性的列，显示宽度没有一毛钱卵用</strong>。</p> <p>只有在查询声明了<code>ZEROFILL</code>属性的列时，显示宽度才会起作用，否则忽略显示宽度这个东西的存在。</p></li></ul> <h3 id="一个列同时具有多个属性"><a href="#一个列同时具有多个属性" class="header-anchor">#</a> 一个列同时具有多个属性</h3> <p>每个列可以同时具有多个属性，属性声明的顺序无所谓，各个属性之间用空白隔开就好了～</p> <div class="custom-block tip"><p class="custom-block-title">提示</p> <p>注意，有的属性是冲突的，一个列不能具有两个冲突的属性，。如一个列不能既声明为 PRIMARY KEY，又声明为 UNIQUE KEY，不能既声明为 DEFAULT NULL，又声明为 NOT NULL。大家在使用过程中需要注意这一点。</p></div> <h3 id="查看表结构时的列属性"><a href="#查看表结构时的列属性" class="header-anchor">#</a> 查看表结构时的列属性</h3> <p><code>student_info</code>表的结构：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>mysql&gt; DESC student_info;
++-----------------+-------------------+------+-----+---------+-------+
+| Field           | Type              | Null | Key | Default | Extra |
++-----------------+-------------------+------+-----+---------+-------+
+| number          | int(11)           | NO   | PRI | NULL    |       |
+| name            | varchar(5)        | YES  |     | NULL    |       |
+| sex             | enum('男','女')   | YES  |     | NULL    |       |
+| id_number       | char(18)          | YES  | UNI | NULL    |       |
+| department      | varchar(30)       | YES  |     | NULL    |       |
+| major           | varchar(30)       | YES  |     | NULL    |       |
+| enrollment_time | date              | YES  |     | NULL    |       |
++-----------------+-------------------+------+-----+---------+-------+
+7 rows in set (0.00 sec)
+
+mysql&gt;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br></div></div><p>可以看到：</p> <ul><li><code>NULL</code>列代表该列是否可以存储<code>NULL</code>，值为<code>NO</code>时，表示不允许存储<code>NULL</code>，值为<code>YES</code>是表示可以存储<code>NULL</code>。</li> <li><code>Key</code>列存储关于所谓的<code>键</code>的信息，当值为<code>PRI</code>是<code>PRIMARY KEY</code>的缩写，代表主键；<code>UNI</code>是<code>UNIQUE KEY</code>的缩写，代表<code>UNIQUE</code>属性。</li> <li><code>Default</code>列代表该列的默认值。</li> <li><code>Extra</code>列展示一些额外的信息。比方说如果某个列具有<code>AUTO_INCREMENT</code>属性就会被展示在这个列里。</li></ul> <h2 id="标识符的命名"><a href="#标识符的命名" class="header-anchor">#</a> 标识符的命名</h2> <p>像数据库名、表名、列名、约束名称或者我们之后会遇到的别的名称，这些名称统统被称为<code>标识符</code>。虽然<code>MySQL</code>中对<code>标识符</code>的命名没多少限制，但是却不欢迎下边的这几种命名：</p> <ul><li>名称中全都是数字。</li> <li>名称中有空白字符</li> <li>名称使用了<code>MySQL</code>中的保留字</li></ul> <p>虽然某些名称可能会导致歧义，但是如果你坚持要使用的话，也不是不行，你可以使用反引号<code>``</code>来将你定义的名称扩起来，这样<code>MySQL</code>的服务器就能检测到你提供的是一个名称而不是别的什么东西</p> <p>我们上边对表<code>first_table</code>的定义可以把里边的标识符全都使用反引号``引起来，这样语义更清晰一点：</p> <div class="language-sql line-numbers-mode"><pre class="language-sql"><code><span class="token keyword">CREATE</span> <span class="token keyword">TABLE</span> <span class="token punctuation">`</span>first_table<span class="token punctuation">`</span> <span class="token punctuation">(</span>
+    <span class="token punctuation">`</span>id<span class="token punctuation">`</span> <span class="token keyword">int</span> <span class="token keyword">UNSIGNED</span> <span class="token keyword">AUTO_INCREMENT</span> <span class="token keyword">PRIMARY</span> <span class="token keyword">KEY</span><span class="token punctuation">,</span>
+    <span class="token punctuation">`</span>first_column<span class="token punctuation">`</span> <span class="token keyword">INT</span><span class="token punctuation">,</span>
+    <span class="token punctuation">`</span>second_column<span class="token punctuation">`</span> <span class="token keyword">VARCHAR</span><span class="token punctuation">(</span><span class="token number">100</span><span class="token punctuation">)</span> <span class="token keyword">DEFAULT</span> <span class="token string">'abc'</span>
+<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><p>虽然反引号比较强大，但是我们还是建议大家不要起各种非主流的名称，也不要使用全数字、带有空白字符或者 MySQL 保留字的名称。由于 MySQL 是 C 语言实现的，所以在名称定义上还是尽量遵从 C 语言的规范吧，就是用小写字母、数字、下划线、美元符号等作为名称，如果有多个单词的话，各个单词之间用下划线连接起来，比如<code>student</code>、<code>student_info</code>啥的～</p></div></div> <div class="page-slot page-slot-bottom"><!-- 横向自适应 -->
+      <ins class="adsbygoogle"
+          style="display:block"
+          data-ad-client="ca-pub-7828333725993554"
+          data-ad-slot="6620245489"
+          data-ad-format="auto"
+          data-full-width-responsive="true"></ins>
+      <script>
+          (adsbygoogle = window.adsbygoogle || []).push({});
+      </script></div> <div class="page-edit"><div class="edit-link"><a href="https://github.com/xugaoyi/vuepress-theme-vdoing/edit/master/docs/1100.MySQL/100.基础/105.DDL—表&amp;列.md" target="_blank" rel="noopener noreferrer">编辑</a> <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></div> <!----> <div class="last-updated"><span class="prefix">上次更新:</span> <span class="time">2021/01/17, 17:17:41</span></div></div> <div class="page-nav-wapper"><div class="page-nav-centre-wrap"><a href="/pages/9cf90b/" class="page-nav-centre page-nav-centre-prev"><div class="tooltip">DDL—数据库</div></a> <a href="/pages/47f816/" class="page-nav-centre page-nav-centre-next"><div class="tooltip">DML 🔥</div></a></div> <div class="page-nav"><p class="inner"><span class="prev">
+        ←
+        <a href="/pages/9cf90b/" class="prev">DDL—数据库</a></span> <span class="next"><a href="/pages/47f816/">DML 🔥</a>→
+      </span></p></div></div></div> <div class="article-list"><div class="article-title"><a href="/archives/" class="iconfont icon-bi">最近更新</a></div> <div class="article-wrapper"><dl><dd>01</dd> <dt><a href="/pages/7fcc72/"><div>线程生命周期</div></a> <span>07-06</span></dt></dl><dl><dd>02</dd> <dt><a href="/pages/a4ef99/"><div>线程安全理论</div></a> <span>06-24</span></dt></dl><dl><dd>03</dd> <dt><a href="/pages/890a0b/"><div>并发简史</div></a> <span>06-24</span></dt></dl> <dl><dd></dd> <dt><a href="/archives/" class="more">更多文章&gt;</a></dt></dl></div></div></main></div> <div class="footer"><div class="icons"><a href="mailto:894072666@qq.com" title="发邮件" target="_blank" class="iconfont icon-youjian"></a><a href="https://github.com/xugaoyi" title="GitHub" target="_blank" class="iconfont icon-github"></a><a href="https://music.163.com/#/playlist?id=755597173" title="听音乐" target="_blank" class="iconfont icon-erji"></a></div> 
+  Theme by
+  <a href="https://github.com/xugaoyi/vuepress-theme-vdoing" target="_blank" title="本站主题">Vdoing</a> 
+    | Copyright © 2019-2021
+    <span>Evan Xu | <a href="https://github.com/xugaoyi/vuepress-theme-vdoing/blob/master/LICENSE" target="_blank">MIT License</a></span></div> <div class="buttons"><div title="返回顶部" class="button blur go-to-top iconfont icon-fanhuidingbu" style="display:none;"></div> <div title="去评论" class="button blur go-to-comment iconfont icon-pinglun" style="display:none;"></div> <div title="主题模式" class="button blur theme-mode-but iconfont icon-zhuti"><ul class="select-box" style="display:none;"><li class="iconfont icon-zidong">
+          跟随系统
+        </li><li class="iconfont icon-rijianmoshi">
+          浅色模式
+        </li><li class="iconfont icon-yejianmoshi">
+          深色模式
+        </li><li class="iconfont icon-yuedu">
+          阅读模式
+        </li></ul></div></div> <!----> <!----> <div class="custom-html-window custom-html-window-rb" style="display:;"><div class="custom-wrapper"><i class="close-but">×</i> <div><!-- 固定160*160px -->
+      <ins class="adsbygoogle"
+          style="display:inline-block;max-width:160px;max-height:160px"
+          data-ad-client="ca-pub-7828333725993554"
+          data-ad-slot="8377369658"></ins>
+      <script>
+          (adsbygoogle = window.adsbygoogle || []).push({});
+      </script>
+      </div></div></div></div><div class="global-ui"><div></div></div></div>
+    <script src="/assets/js/app.ac5e3ef4.js" defer></script><script src="/assets/js/2.d960b235.js" defer></script><script src="/assets/js/105.603033e4.js" defer></script>
+  </body>
+</html>
